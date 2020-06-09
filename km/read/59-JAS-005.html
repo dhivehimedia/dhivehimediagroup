@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ޔާމިޒުގެ ސިޓީ 5</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "s1", start: 0.94, end: 3.69 },
+    { label: "1a", start: 3.94, end: 5.66 },
+    { label: "1b", start: 5.91, end: 8.51 },
+    { label: "1c", start: 8.76, end: 12.55 },
+    { label: "2a", start: 12.8, end: 15.87 },
+    { label: "2b", start: 16.12, end: 20.67 },
+    { label: "3a", start: 20.92, end: 25.52 },
+    { label: "3b", start: 25.77, end: 28.62 },
+    { label: "3c", start: 28.87, end: 33.31 },
+    { label: "3d", start: 33.56, end: 37.54 },
+    { label: "4a", start: 37.79, end: 48.36 },
+    { label: "4b", start: 48.61, end: 55.11 },
+    { label: "5a", start: 55.36, end: 60.89 },
+    { label: "5b", start: 61.14, end: 63.82 },
+    { label: "5c", start: 64.07, end: 68.18 },
+    { label: "6", start: 68.43, end: 74.03 },
+    { label: "s2", start: 74.28, end: 76.62 },
+    { label: "7a", start: 76.87, end: 78.98 },
+    { label: "7b", start: 79.23, end: 83.17 },
+    { label: "7c", start: 83.42, end: 87.23 },
+    { label: "7d", start: 87.48, end: 94.54 },
+    { label: "8a", start: 94.79, end: 97.45 },
+    { label: "8b", start: 97.7, end: 100.03 },
+    { label: "8c", start: 100.28, end: 104.09 },
+    { label: "9a", start: 104.34, end: 106.11 },
+    { label: "9b", start: 106.36, end: 107.94 },
+    { label: "9c", start: 108.19, end: 112.43 },
+    { label: "9d", start: 112.68, end: 113.58 },
+    { label: "9e", start: 113.83, end: 116.9 },
+    { label: "10a", start: 117.15, end: 118.7 },
+    { label: "10b", start: 118.95, end: 122.56 },
+    { label: "10c", start: 122.81, end: 127.08 },
+    { label: "10d", start: 127.33, end: 132.27 },
+    { label: "11a", start: 132.52, end: 137.07 },
+    { label: "11b", start: 137.32, end: 149.22 },
+    { label: "11c", start: 149.47, end: 156.55 },
+    { label: "12a", start: 156.8, end: 158.22 },
+    { label: "12b", start: 158.47, end: 161.92 },
+    { label: "12c", start: 162.17, end: 164.99 },
+    { label: "12d", start: 165.24, end: 167.91 },
+    { label: "12e", start: 168.16, end: 173.44 },
+    { label: "12f", start: 173.69, end: 178.81 },
+    { label: "s3", start: 179.06, end: 180.81 },
+    { label: "13a", start: 181.06, end: 186.9 },
+    { label: "13b", start: 187.15, end: 192.95 },
+    { label: "14a", start: 193.2, end: 202.72 },
+    { label: "14b", start: 202.97, end: 210.63 },
+    { label: "15a", start: 210.88, end: 219.58 },
+    { label: "15b", start: 219.83, end: 225.28 },
+    { label: "16a", start: 225.53, end: 231.02 },
+    { label: "16b", start: 231.27, end: 234.65 },
+    { label: "16c", start: 234.9, end: 240.27 },
+    { label: "17a", start: 240.52, end: 243.2 },
+    { label: "17b", start: 243.45, end: 246.05 },
+    { label: "17c", start: 246.3, end: 253.23 },
+    { label: "17d", start: 253.48, end: 260.42 },
+    { label: "18a", start: 260.67, end: 265.53 },
+    { label: "18b", start: 265.78, end: 268.7 },
+    { label: "18c", start: 268.95, end: 273.21 },
+    { label: "s4", start: 273.46, end: 277.38 },
+    { label: "19a", start: 277.63, end: 279.5 },
+    { label: "19b", start: 279.75, end: 287.71 },
+    { label: "20a", start: 287.96, end: 293.72 },
+    { label: "20b", start: 293.97, end: 297.19 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 5 }];
+var hasIntro = true;
+var baseRef  = "59-JAS-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="ltr" lang="dv">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='56-TIT-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='59-JAS-004.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޔާމިޒުގެ ސިޓީ&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;5&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='60-1PE-000.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='60-1PE-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+
+<div class="s"><div id="Ts1" class="txs">މުއްސަނދިކަމާއިމެދުގައި ކުރާ އިންޒާރު</div></div><a id="v1"></a>
+<div class="m">
+<div class="c-drop">5</div> <div id="T1a" class="txs"><span class="v">&#x200f;1</span><span class="vsp">&nbsp;</span>މުއްސަނދި މީސްތަކުންނޭވެ.</div> <div id="T1b" class="txs">އަހަރެންގެ މިވާހަކަ އާއިމެދު ކަނުލައި އަޑުއަހާށެވެ.</div> <div id="T1c" class="txs">ކަލޭމެންނާއި ކުރިމަތިވަމުން އަންނަ މުސީބާތްތަކާއި މެދު ރޮއި ހޭރޭނޭއެވެ!</div><span id="bookmarks1"></span> <a id="v2"></a><div id="T2a" class="txs"><span class="v">&#x200f;2</span><span class="vsp">&nbsp;</span>ކަލޭމެންގެ މުއްސަނދިކަން ވަނީ ހަލާކުވެފައެވެ.</div> <div id="T2b" class="txs">ބޭރުފުށުން ކަލޭމެން ލައިގެން ތިބި އެދެވޭ އަންނައުނުތައް ބަޅިނދުތައް އައިސް ކައި ހަދައެވެ.</div><span id="bookmarks2"></span> <a id="v3"></a><div id="T3a" class="txs"><span class="v">&#x200f;3</span><span class="vsp">&nbsp;</span>އަދި ކަލޭމެންގެ އަތުގައި ހުރި ރަންރިހީގެ މަޢުދަންތަކުގައި ވަނީ ދަމިލަ ޖަހާފައެވެ.</div> <div id="T3b" class="txs">އެ ދަމިލަ ސާބިތުކޮށްދެނީ ކަލޭމެންގެ ނުބައިކަމެވެ.</div> <div id="T3c" class="txs">އަދި ކަލޭމެންގެ ހަށިތައް އަލިފާނުގައި އަދައިގެންދާ ފަދައިން އެ ތަކެތި ވާނެއެވެ.</div> <div id="T3d" class="txs">ކަލޭމެންނަށް ލިބިގެންވީ ޚަޒާނާތައް އެންމެ ފަހު ޒަމާނަށް ރައްކާކުރެވިފައިވެއެވެ.</div><span id="bookmarks3"></span> <a id="v4"></a><div id="T4a" class="txs"><span class="v">&#x200f;4</span><span class="vsp">&nbsp;</span>އަދި ކަލޭމެންގެ ދަނޑުތަކުގައި ގޮވާން ކޮށްދިން ދަނޑުވެރިންނަށް ކަލޭމެން ޚިޔާނާތްތެރިވެ އެބައިމީހުންނަށް ލިބިދޭންޖެހޭ މަސައްކަތުގެ އުޖޫރަ ނުދިނުމުން ކަލޭމެންނާއި ދެކޮޅުވެރިވެ އެބައިމީހުން އަޑުލަނީއެވެ.</div> <div id="T4b" class="txs">އެބައިމީހުން އުޖޫރައަށް އެދި ކުރި ޝަކުވާތަކުގެ އަޑު އެންމެހާ ކަމަކަށް ކުޅަދުންވަންތަ މާތްރަސްކަލާނގެ އައްސަވާވޮޑިގެންވިއެވެ.</div><span id="bookmarks4"></span> <a id="v5"></a><div id="T5a" class="txs"><span class="v">&#x200f;5</span><span class="vsp">&nbsp;</span>މި ދުނިޔޭގައި ކަލޭމެން ޙަޔާތުގެ އުފާފާގަތިކަން ހޯދީ ހިތުހުރި ގޮތަކަށް އަރާމުގައި ދިރިއުމުގައެވެ.</div> <div id="T5b" class="txs">ކަލޭމެންގެ ޖިސްމުތަކަށް ފުރިހަމަ ރޫފަ ގެނުވިއެވެ.</div> <div id="T5c" class="txs">އެއީ ކަތިލުމަށް ތައްޔާރުވެފައިވާ ރޫފަ ރަނގަޅު ޖަނަވާރަކާއި އެއްފަދައިންނެވެ.</div><span id="bookmarks5"></span> <a id="v6"></a><div id="T6" class="txs"><span class="v">&#x200f;6</span><span class="vsp">&nbsp;</span>އަދި ކަލޭމެންނާއި ދެކޮޅުވެރި ކަމުގައި ނުވިޔަސް ކުށެއްނެތް މަޢުސޫމު އެތައް ބަޔަކު ކަލޭމެން މެރީމުއެވެ.</div><span id="bookmarks6"></span></div>
+
+<div class="s"><div id="Ts2" class="txs">ކެތްތެރިކަމާއެކު ވޭނުގައިވުން</div></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><div id="T7a" class="txs"><span class="v">&#x200f;7</span><span class="vsp">&nbsp;</span>މަގޭ އަޚުންނާއި އުޚުތުންނޭވެ!</div> <div id="T7b" class="txs">މާތްސާހިބު އީސާގެފާނު އެނބުރިވަޑައިގަތުމަށް ދާންދެން ކެތްތެރިވާށެވެ.</div> <div id="T7c" class="txs">މިސާލެއްގެ ގޮތުން ދަނޑުވެރިންނާއި މެދުގައި ވިސްނައިބަލާށެވެ.</div> <div id="T7d" class="txs">އެބައިމީހުން ބިމުގައި އިންދި ގޮވާމުގެ މަތިވަރުން އޭގެ އަގު ލިބުމަށް އެދި ޚަރީފު މޫސުމާއި ބަހާރު މޫސުމުގެ ވާރޭގެ އިންތިޒާރުގައި ތިބެއެވެ.</div><span id="bookmarks7"></span> <a id="v8"></a><div id="T8a" class="txs"><span class="v">&#x200f;8</span><span class="vsp">&nbsp;</span>ހަމައެފަދައިން ކަލޭމެން ވެސް ކެތްތެރިވާށެވެ.</div> <div id="T8b" class="txs">އަދި ކަލޭމެންގެ ހިތްވަރު ދޫކޮށްނުލާށެވެ.</div> <div id="T8c" class="txs">ސަބަބަކީ މާތްސާހިބާ އެނބުރިވަޑައިގަތުމުގެ ދުވަސް ވަނީ ކައިރީގައެވެ.</div><span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><div id="T9a" class="txs"><span class="v">&#x200f;9</span><span class="vsp">&nbsp;</span>މަގޭ އަޚުންނާއި އުޚުތުންނޭވެ!</div> <div id="T9b" class="txs">އެކަކު އަނެކަކަށް ޝަކުވާ ނުކުރާށެވެ.</div> <div id="T9c" class="txs">އެގޮތް ކަލޭމެންގެ އަމަލުތަކުގައި ވާނަމަ ކަލޭމެންގެ ކުށަށް އިންސާފު ކުރައްވާނެއެވެ.</div> <div id="T9d" class="txs">ވިސްނާށެވެ.</div> <div id="T9e" class="txs">އަދި މަތިވެރި ފަނޑިޔާރު ވަޑައިގަތުން ވަނީ ކައިރީގައެވެ.</div><span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><div id="T10a" class="txs"><span class="v">&#x200f;10</span><span class="vsp">&nbsp;</span>މަގޭ އަޚުންނާއި އުޚުތުންނޭވެ!</div> <div id="T10b" class="txs">މާތްރަސްކަލާނގެ ފޮނުއްވި ރަސޫލުންގެ އުޅުއްވުންތަކުން މިސާލު ނަގާށެވެ.</div> <div id="T10c" class="txs">އެބޭކަލުންނަށް ބޭއިންސާފުން ލިބެމުން ނުހަނު ބޮޑު ވޭންތަކެއް ލިބެމުން ދިޔައެވެ.</div> <div id="T10d" class="txs">ވިޔަސް އެމީހުން ކެތްތެރިކަމާއެކު މާތްސާހިބާގެ ނަންފުޅުގައި ވާހަކަ ދައްކަމުން ދިޔައެވެ.</div><span id="bookmarks10"></span> <a id="v11"></a><div id="T11a" class="txs"><span class="v">&#x200f;11</span><span class="vsp">&nbsp;</span>އަހަރެމެން މަތިވެރިކަމެއް ދެނީ ކެތްތެރިވެ އީމާންތެރިކަމުގައި ދެމިތިބޭ މީހުންނަށެވެ.</div> <div id="T11b" class="txs">އައްޔޫބުގެފާނުގެ ކެތްތެރިވެ ވަޑައިގަތުމާއި އަދި އެކަލޭގެފާނު ކެތްތެރިވެ ވަޑައިގަތުމުން ސާހިބުވަންތަކަލާނގެ އެކަލޭގެފާނަށް އެންމެފަހުން އެހީތެރިވެ ވޮޑިގެންނެވީ ހެޔޮ ގޮތުގައިކަން ކަލޭމެން ވާނީ އަޑު އަހާފައެވެ.</div> <div id="T11c" class="txs">ސާހިބުވަންތަކަލާނގެ މިފަދައިން އަމަލުކުރެއްވި ސަބަބަކީ އެކަލާނގެއީ އޯގާވަންތަ އަދި ރަޙުމަތްވަންތަ ރަސްކަލާނގެ ކަމުގައިވުމެވެ.</div><span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><div id="T12a" class="txs"><span class="v">&#x200f;12</span><span class="vsp">&nbsp;</span>މަގޭ އަޚުންނާއި އުޚުތުންނޭވެ!</div> <div id="T12b" class="txs">މިބަޔާންވެ ދިޔަ އެންމެހާ ކަންތައްތަކުގެ އިތުރުން އަހަރެން ބުނަމެވެ.</div> <div id="T12c" class="txs">ދުނިޔެއާއި ސުވަރުގެ ގަންދީ ހުވާ ކޮށްގެންނުވާނެއެވެ.</div> <div id="T12d" class="txs">އަދި އެކައްޗެއް ގަންދީ ވެސް ހުވައިކޮށްގެން ނުވާނެއެވެ.</div> <div id="T12e" class="txs">އޭގެ ބަދަލުގައި ހަމައެކަނި އާނއެކޭ ނުވަތަ ނޫނެކޭ ބުނެ އެގޮތްމަތީ ދެމިހުންނާށެވެ.</div> <div id="T12f" class="txs">މިގޮތުގައި ކަލޭމެން އަމަލު ނުކޮށްފިނަމަ މާތްރަސްކަލާނގެ ޙަޟްރަތުގައި ކަލޭމެން ކުށްވެރިވާނެއެވެ.</div><span id="bookmarks12"></span></div>
+
+<div class="s"><div id="Ts3" class="txs">ދުޢާކުރުމުގައިވާ ބާރު</div></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><div id="T13a" class="txs"><span class="v">&#x200f;13</span><span class="vsp">&nbsp;</span>ކަލޭމެންގެ ތެރެއިން މީހަކު މުސީބާތުގައި ވާނަމަ މާތްރަސްކަލާނގެ ކިބަފުޅުން އެހީތެރިކަމަށް އެދި ދުޢާ ދަންނަވާށެވެ.</div> <div id="T13b" class="txs">ކަލޭމެންގެ ތެރެއިން މީހަކު އުފަލުގައި ވާނަމަ މާތްރަސްކަލާނގެ ކިބަފުޅަށް މަދަޙައިން ޙަމްދު ސަނާ ދަންނަވާށެވެ.</div><span id="bookmarks13"></span> <a id="v14"></a><div id="T14a" class="txs"><span class="v">&#x200f;14</span><span class="vsp">&nbsp;</span>ކަލޭމެންގެ ތެރެއިން މީހަކު ބަލިޙާލަތުގައި ވާނަމަ ޖަމާޢަތުގެ ބޮޑުންގެ ކިބައިން އޭނާގެ ކައިރިއަށް އައުމަށް އެދި އޭނާގެ ބަލި ޙާލަތާއިމެދު މާތްރަސްކަލާނގެ ކިބަފުޅަށް ދުޢާކޮށްދިނުމަށް އެދޭށެވެ.</div> <div id="T14b" class="txs">އަދި މާތްސާހިބާގެ ނަންފުޅުން ބަލި ޙާލަތުގައިވާ މީހާގެ ހަށިގަނޑުގައި ޒައިތޫނި ތެޔޮ އުނގުޅައި މާތްރަސްކަލާނގެ ކިބަފުޅަށް ހުށަހަޅައި ދިނުމަށް އެދޭށެވެ.</div><span id="bookmarks14"></span> <a id="v15"></a><div id="T15a" class="txs"><span class="v">&#x200f;15</span><span class="vsp">&nbsp;</span>ކަލޭމެން އީމާންތެރިކަމުގައިވެ ބަލިޙާލަތުގައިވާ މީހާއަށް ދުޢާ ކުރުމުން އެބައިމީހުންގެ ބައްޔަށް ޝިފާ ލިބި މާތްސާހިބާ އެބައިމީހުންގެ ބަލި ހެޔޮކޮށް ދެއްވާނެއެވެ.</div> <div id="T15b" class="txs">އަދި އެބައިމީހުން ފާފަވެރި ވެފައިވިނަމަވެސް އެކަލޭގެފާނު އެބައިމީހުންގެ ފާފަތައް ޢަފޫކޮށްދެއްވާނެއެވެ.</div><span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="p"><div id="T16a" class="txs"><span class="v">&#x200f;16</span><span class="vsp">&nbsp;</span>އެހެންވީމާ ކަލޭމެންގެ ތެރެއިން އެކަކު އަނެކަކަށް ކުރެވިފައިވާ ފާފަތަކަށް އެއްބަސްވެ ތައުބާ ވާށެވެ.</div> <div id="T16b" class="txs">އަދި އެކަކު އަނެކަކަށް ހެޔޮ ޙާލުގައި ވުމަށް އެދި ދުޢާކުރާށެވެ.</div> <div id="T16c" class="txs">ޞާލިޙު ގޮތުގައި ޙަޔާތު ވޭތުކުރަމުން ދާ ފަރާތްތަކުގެ ދުޢާތައް ބާރުގަދަވެފައި ބަރުދަން ހުންނާނެއެވެ.</div><span id="bookmarks16"></span> <a id="v17"></a><div id="T17a" class="txs"><span class="v">&#x200f;17</span><span class="vsp">&nbsp;</span>އިލްޔާސްގެފާނާއި މެދުގައި ނިކަން ވިސްނައިބަލާށެވެ.</div> <div id="T17b" class="txs">އެކަލޭގެފާނަކީ ވެސް އަހަރެމެން ފަދަ އިންސާނެކެވެ.</div> <div id="T17c" class="txs">އެކަލޭގެފާނުގެ ޒަމާނުގައި ވާރޭ ނުވެއްސެވުމަށް އެދި އިޚުލާސްތެރިކަމާއެކު މާތްރަސްކަލާނގެ ކިބަފުޅަށް އެކަލޭގެފާނު ދުޢާފުޅު ކުރެއްވިއެވެ.</div> <div id="T17d" class="txs">އަދި އެކަލޭގެފާނު ކުރެއްވި ދުޢާފުޅު މާތްރަސްކަލާނގެ އިޖާބަ ކުރައްވައި ތިން އަހަރާއި ހަމަސްދުވަސް ވަންދެން އެ ރަށަށް ވާރޭ ނުވެއްސެވިއެވެ.</div><span id="bookmarks17"></span> <a id="v18"></a><div id="T18a" class="txs"><span class="v">&#x200f;18</span><span class="vsp">&nbsp;</span>އެއަށް ފަހު ވާރޭ ފޮނުއްވައި ދެއްވުމަށް އެދި މާތްރަސްކަލާނގެ ކިބަފުޅަށް އެކަލޭގެފާނު ދުޢާފުޅު ކުރެއްވިއެވެ.</div> <div id="T18b" class="txs">އެ ހިނދު މާތްރަސްކަލާނގެ ވާރޭ ފޮނުއްވުމަށް އިރާދަ ކުރެއްވިއެވެ.</div> <div id="T18c" class="txs">އަދި މުޅި އެ ބިމުގައި ހުރި ގަސްތަކަށް ފެހިކަން ލިބި ގޮވާމުގެ މަތިވަރު ލިބެން ފެށިއެވެ.</div><span id="bookmarks18"></span></div>
+
+<div class="s"><div id="Ts4" class="txs">މިސްރާބު ގެއްލިފައިވާ އީމާންވެގެންވާ މީހާ ހެޔޮ މަގަށް އެޅުވުން</div></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><div id="T19a" class="txs"><span class="v">&#x200f;19</span><span class="vsp">&nbsp;</span>އަހަރެންގެ އަޚުންނާއި އުޚުތުންނޭވެ!</div> <div id="T19b" class="txs">ކަލޭމެންގެ ތެރެއިން މީހަކު މަގުފުރެދިގެން ވާނަމަ އެފަދަ މީހަކު ޙައްޤުގެ މަގަށް އެނބުރި ގެނައުމުގައި ކޮންމެވެސް މީހަކު އެހީތެރިވެދޭށެވެ.</div><span id="bookmarks19"></span> <a id="v20"></a><div id="T20a" class="txs"><span class="v">&#x200f;20</span><span class="vsp">&nbsp;</span>އޭރުން ޙައްޤުން އެއްކިބާވެފައިވީ ފާފަވެރިޔާ ހެޔޮމަގަށް ގެނެސް ދިނުމުން އޭނާގެ ފުރާނަ މަރުން ސަލާމަތް ވެއެވެ.</div> <div id="T20b" class="txs">އަދި އެބައިމީހުންގެ ގިނަގުނަ ފާފަތައް ޢަފޫކުރައްވައެވެ.</div><span id="bookmarks20"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://archive.org/download/KM-Audio/59_JAS_05.mp3" />
+  </audio>
+</div>
+</div>
+
+</body>
+</html>
