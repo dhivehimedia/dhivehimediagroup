@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -43,8 +44,8 @@ var timings = [
     { label: "5a", start: 76.12, end: 86.03 },
     { label: "5b", start: 86.28, end: 93.27 },
     { label: "5c", start: 93.52, end: 96.03 },
-    { label: "6", start: 96.28, end: 111.99 },
-    { label: "7", start: 112.24, end: 124.57 },
+    { label: "6", start: 96.28, end: 111.27 },
+    { label: "7", start: 111.52, end: 124.57 },
     { label: "8a", start: 124.82, end: 125.66 },
     { label: "8b", start: 125.91, end: 126.79 },
     { label: "8c", start: 127.04, end: 140.23 },
@@ -64,8 +65,8 @@ var timings = [
     { label: "12f", start: 221.08, end: 226.73 },
     { label: "13a", start: 226.98, end: 230.18 },
     { label: "13b", start: 230.43, end: 233.6 },
-    { label: "13c", start: 233.85, end: 238.58 },
-    { label: "13d", start: 238.83, end: 244.22 },
+    { label: "13c", start: 233.85, end: 239.23 },
+    { label: "13d", start: 239.48, end: 244.22 },
     { label: "13e", start: 244.47, end: 248.64 },
     { label: "13f", start: 248.89, end: 254.12 },
     { label: "14a", start: 254.37, end: 257.9 },
@@ -102,7 +103,7 @@ var crossrefs = {
     "X-0": "<div class=\"footnote-p\"><span class=\"xo\">2‏:5 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"01-GEN-006.html\">ފެށުން 6</a></span> </span></div>",
     "X-1": "<div class=\"footnote-p\"><span class=\"xo\">2‏:6 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"01-GEN-019.html#v24\">ފެށުން 19‏:24</a></span></span></div>",
     "X-2": "<div class=\"footnote-p\"><span class=\"xo\">2‏:16 </span><span class=\"xt\">އަދަދު 22‏:4‏-35</span></div>",
-    "X-3": "<div class=\"footnote-p\"><span class=\"xo\">2‏:22 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"06-PRO-026.html#v11\">ހަރުބަސްތައް 26‏:11</a></span></span></div>"
+    "X-3": "<div class=\"footnote-p\"><span class=\"xo\">2‏:22 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"20-PRO-026.html#v11\">ހަރުބަސްތައް 26‏:11</a></span></span></div>"
 };
 
 initFootnotes(crossrefs);
@@ -125,12 +126,13 @@ var baseRef  = "61-2PE-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='60-1PE-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='61-2PE-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='60-1PE-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='61-2PE-001.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޕަތަރަސްގެ ދެވަނަ ސިޓީ&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='61-2PE-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='00-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='61-2PE-003.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='00-GLO-001.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -149,7 +151,7 @@ var baseRef  = "61-2PE-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/61_2PE_02.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/61_2PE_02.mp3" />
   </audio>
 </div>
 </div>

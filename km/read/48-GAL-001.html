@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -25,10 +26,10 @@ $(window).load(function() {
 var pop = Popcorn("#audio");
 
 var timings = [
-    { label: "s1", start: 1.25, end: 2.35 },
-    { label: "1a", start: 2.6, end: 7.44 },
-    { label: "1b", start: 7.69, end: 11.05 },
-    { label: "1c", start: 11.3, end: 16.99 },
+    { label: "s1", start: 0.99, end: 2 },
+    { label: "1a", start: 2.25, end: 7.44 },
+    { label: "1b", start: 7.69, end: 11.35 },
+    { label: "1c", start: 11.6, end: 16.99 },
     { label: "1d", start: 17.24, end: 19.23 },
     { label: "1e", start: 19.48, end: 20.67 },
     { label: "2-3a", start: 20.92, end: 29.19 },
@@ -39,16 +40,16 @@ var timings = [
     { label: "4c", start: 55.32, end: 56.51 },
     { label: "4d", start: 56.76, end: 58.35 },
     { label: "5a", start: 58.6, end: 65.83 },
-    { label: "5b", start: 66.08, end: 66.25 },
-    { label: "s2", start: 66.5, end: 69.72 },
-    { label: "6a", start: 69.97, end: 78.02 },
+    { label: "5b", start: 66.08, end: 67.07 },
+    { label: "s2", start: 67.32, end: 70.47 },
+    { label: "6a", start: 70.72, end: 78.02 },
     { label: "6b", start: 78.27, end: 88.14 },
     { label: "7a", start: 88.39, end: 92.27 },
     { label: "7b", start: 92.52, end: 99.79 },
     { label: "8", start: 100.04, end: 111.59 },
     { label: "9a", start: 111.84, end: 114.83 },
-    { label: "9b", start: 115.08, end: 124.49 },
-    { label: "10a", start: 124.74, end: 128.59 },
+    { label: "9b", start: 115.08, end: 125.31 },
+    { label: "10a", start: 125.56, end: 128.59 },
     { label: "10b", start: 128.84, end: 131.19 },
     { label: "10c", start: 131.44, end: 135.22 },
     { label: "10d", start: 135.47, end: 136.59 },
@@ -64,8 +65,8 @@ var timings = [
     { label: "13b", start: 181.89, end: 186.16 },
     { label: "13c", start: 186.41, end: 189.79 },
     { label: "13d", start: 190.04, end: 193.68 },
-    { label: "14a", start: 193.93, end: 198.27 },
-    { label: "14b", start: 198.52, end: 205.36 },
+    { label: "14a", start: 193.93, end: 198.79 },
+    { label: "14b", start: 199.04, end: 205.36 },
     { label: "15a", start: 205.61, end: 214.37 },
     { label: "15b", start: 214.62, end: 217.05 },
     { label: "16a", start: 217.3, end: 222.7 },
@@ -125,12 +126,13 @@ var baseRef  = "48-GAL-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='44-ACT-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='48-GAL-000.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='44-ACT-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='48-GAL-000.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ގަލާތިޔާގެ މަސީޙީންނަށް ސިޓީ&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='48-GAL-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='49-EPH-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='48-GAL-002.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='49-EPH-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -159,7 +161,7 @@ var baseRef  = "48-GAL-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/48_GAL_01.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/48_GAL_01.mp3" />
   </audio>
 </div>
 </div>

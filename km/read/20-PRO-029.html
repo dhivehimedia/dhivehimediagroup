@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -26,25 +27,25 @@ var pop = Popcorn("#audio");
 
 var timings = [
     { label: "s1", start: 1.47, end: 3.82 },
-    { label: "1", start: 4.07, end: 11.11 },
-    { label: "2a", start: 11.36, end: 15.35 },
+    { label: "1", start: 4.07, end: 10.32 },
+    { label: "2a", start: 10.57, end: 15.35 },
     { label: "2b", start: 15.6, end: 18.77 },
     { label: "3a", start: 19.02, end: 23.55 },
-    { label: "3b", start: 23.8, end: 26.97 },
-    { label: "4a", start: 27.22, end: 31.11 },
-    { label: "4b", start: 31.36, end: 34.55 },
-    { label: "5", start: 34.8, end: 38.84 },
+    { label: "3b", start: 23.8, end: 27.55 },
+    { label: "4a", start: 27.8, end: 30.36 },
+    { label: "4b", start: 30.61, end: 33.96 },
+    { label: "5", start: 34.21, end: 38.84 },
     { label: "6a", start: 39.09, end: 42 },
     { label: "6b", start: 42.25, end: 45.62 },
     { label: "7a", start: 45.87, end: 49.43 },
     { label: "7b", start: 49.68, end: 52.32 },
     { label: "8a", start: 52.57, end: 55.89 },
     { label: "8b", start: 56.14, end: 58.14 },
-    { label: "9a", start: 58.39, end: 64.27 },
-    { label: "9b", start: 64.52, end: 67.07 },
+    { label: "9a", start: 58.39, end: 64.79 },
+    { label: "9b", start: 65.04, end: 67.07 },
     { label: "10a", start: 67.32, end: 70.85 },
-    { label: "10b", start: 71.1, end: 75.35 },
-    { label: "11a", start: 75.6, end: 77.07 },
+    { label: "10b", start: 71.1, end: 74.62 },
+    { label: "11a", start: 74.87, end: 77.07 },
     { label: "11b", start: 77.32, end: 79.03 },
     { label: "12", start: 79.28, end: 84.26 },
     { label: "13a", start: 84.51, end: 88.95 },
@@ -57,20 +58,20 @@ var timings = [
     { label: "17a", start: 116.01, end: 117.91 },
     { label: "17b", start: 118.16, end: 122.45 },
     { label: "18a", start: 122.7, end: 127.97 },
-    { label: "18b", start: 128.22, end: 132.59 },
-    { label: "19a", start: 132.84, end: 135.42 },
+    { label: "18b", start: 128.22, end: 131.8 },
+    { label: "19a", start: 132.05, end: 135.42 },
     { label: "19b", start: 135.67, end: 137.92 },
     { label: "19c", start: 138.17, end: 140.19 },
     { label: "20", start: 140.44, end: 145.11 },
     { label: "21", start: 145.36, end: 152.57 },
     { label: "22a", start: 152.82, end: 156.01 },
     { label: "22b", start: 156.26, end: 160.3 },
-    { label: "23a", start: 160.55, end: 163.13 },
-    { label: "23b", start: 163.38, end: 165.39 },
-    { label: "24a", start: 165.64, end: 168.94 },
-    { label: "24b", start: 169.19, end: 173.94 },
-    { label: "25a", start: 174.19, end: 177.27 },
-    { label: "25b", start: 177.52, end: 181.27 },
+    { label: "23a", start: 160.55, end: 162.91 },
+    { label: "23b", start: 163.16, end: 165.39 },
+    { label: "24a", start: 165.64, end: 169.39 },
+    { label: "24b", start: 169.64, end: 174.63 },
+    { label: "25a", start: 174.88, end: 177.53 },
+    { label: "25b", start: 177.78, end: 181.27 },
     { label: "26a", start: 181.52, end: 183.98 },
     { label: "26b", start: 184.23, end: 187.28 },
     { label: "27a", start: 187.53, end: 191.28 },
@@ -99,12 +100,13 @@ var baseRef  = "20-PRO-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-028.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='20-PRO-028.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ހަރުބަސްތައް&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;29&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-030.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='20-PRO-030.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -145,7 +147,7 @@ var baseRef  = "20-PRO-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/20_PRO_29.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/20_PRO_29.mp3" />
   </audio>
 </div>
 </div>

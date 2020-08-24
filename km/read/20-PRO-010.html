@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -28,32 +29,32 @@ var timings = [
     { label: "s1", start: 1.21, end: 4.87 },
     { label: "1a", start: 5.12, end: 8.15 },
     { label: "1b", start: 8.4, end: 11.65 },
-    { label: "1c", start: 11.9, end: 14.99 },
-    { label: "2a", start: 15.24, end: 18.47 },
+    { label: "1c", start: 11.9, end: 15.03 },
+    { label: "2a", start: 15.28, end: 18.47 },
     { label: "2b", start: 18.72, end: 22.55 },
-    { label: "3a", start: 22.8, end: 26.69 },
-    { label: "3b", start: 26.94, end: 32.47 },
+    { label: "3a", start: 22.8, end: 27.31 },
+    { label: "3b", start: 27.56, end: 32.47 },
     { label: "4a", start: 32.72, end: 35.07 },
     { label: "4b", start: 35.32, end: 38.51 },
-    { label: "5a", start: 38.76, end: 42.15 },
-    { label: "5b", start: 42.4, end: 44.59 },
-    { label: "6a", start: 44.84, end: 48.03 },
-    { label: "6b", start: 48.28, end: 51.48 },
-    { label: "7a", start: 51.73, end: 56.54 },
-    { label: "7b", start: 56.79, end: 60.01 },
+    { label: "5a", start: 38.76, end: 41.46 },
+    { label: "5b", start: 41.71, end: 44.59 },
+    { label: "6a", start: 44.84, end: 47.44 },
+    { label: "6b", start: 47.69, end: 51.48 },
+    { label: "7a", start: 51.73, end: 56.99 },
+    { label: "7b", start: 57.24, end: 60.01 },
     { label: "8a", start: 60.26, end: 67.27 },
     { label: "8b", start: 67.52, end: 70.13 },
-    { label: "9a", start: 70.38, end: 74.47 },
-    { label: "9b", start: 74.72, end: 80.23 },
-    { label: "10a", start: 80.48, end: 82.62 },
+    { label: "9a", start: 70.38, end: 74.43 },
+    { label: "9b", start: 74.68, end: 80.27 },
+    { label: "10a", start: 80.52, end: 82.62 },
     { label: "10b", start: 82.87, end: 86.35 },
     { label: "11a", start: 86.6, end: 89.77 },
-    { label: "11b", start: 90.02, end: 94.04 },
-    { label: "12a", start: 94.29, end: 97.19 },
-    { label: "12b", start: 97.44, end: 99.15 },
+    { label: "11b", start: 90.02, end: 94.83 },
+    { label: "12a", start: 95.08, end: 97.27 },
+    { label: "12b", start: 97.52, end: 99.15 },
     { label: "12c", start: 99.4, end: 101.2 },
-    { label: "13a", start: 101.45, end: 106.03 },
-    { label: "13b", start: 106.28, end: 109.63 },
+    { label: "13a", start: 101.45, end: 105.17 },
+    { label: "13b", start: 105.42, end: 109.63 },
     { label: "14a", start: 109.88, end: 111.81 },
     { label: "14b", start: 112.06, end: 116.5 },
     { label: "15a", start: 116.75, end: 119.4 },
@@ -80,7 +81,8 @@ var timings = [
     { label: "25a", start: 185.24, end: 189.61 },
     { label: "25b", start: 189.86, end: 193.5 },
     { label: "26a", start: 193.75, end: 196.56 },
-    { label: "26b", start: 196.81, end: 201.49 },
+    { label: "26b", start: 196.81, end: 199.39 },
+    { label: "26c", start: 199.64, end: 201.49 },
     { label: "27a", start: 201.74, end: 203.87 },
     { label: "27b", start: 204.12, end: 206.17 },
     { label: "27c", start: 206.42, end: 209.24 },
@@ -118,12 +120,13 @@ var baseRef  = "20-PRO-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-009.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='20-PRO-009.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ހަރުބަސްތައް&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;10&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-011.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='20-PRO-011.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -158,7 +161,7 @@ var baseRef  = "20-PRO-";
 <div class="p"><div id="T23a" class="txs"><span class="v">&#x200f;23</span><span class="vsp">&nbsp;</span>މޮޔައިން ކުރާހިތްވާނީ ގޯސް ކަންތަކެވެ.</div> <div id="T23b" class="txs">ވިސްނުންތެރިން ކުރާހިތްވާނީ ބުއްދިވެރި ކަންކަމެވެ.</div><span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
 <div class="p"><div id="T24a" class="txs"><span class="v">&#x200f;24</span><span class="vsp">&nbsp;</span>ނުބައިމީހާ އެންމެ ބިރުގަންނަ ކަންތައް އޭނާއާ ކުރިމަތި ވާނެއެވެ.</div> <div id="T24b" class="txs">އެކަމަކު ހެޔޮމީހާއަށް އޭނާ އެދޭ ރަނގަޅު ކަންތައް ފަހިވެގެން އަންނާނެއެވެ.</div><span id="bookmarks24"></span></div><span id="bookmarks24"></span><a id="v25"></a>
 <div class="p"><div id="T25a" class="txs"><span class="v">&#x200f;25</span><span class="vsp">&nbsp;</span>ޙަޔާތަށް ތޫފާނެއް އަންނަ ހިނދު ނުބައިނުލަފާމީހުން ގެއްލި ހިނގައިދާނެއެވެ.</div> <div id="T25b" class="txs">އެކަމަކު ޞާލިޙުން ތިބޭނީ އަބަދުވެސް ސަލާމަތްކަން މަތީގައެވެ.</div><span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
-<div class="p"><div id="T26a" class="txs"><span class="v">&#x200f;26</span><span class="vsp">&nbsp;</span>ކަންނެތް މީހަކާ ކަމެއް ހަވާލު ނުކުރާށެވެ.</div> <div id="T26b" class="txs">އެއީ ތިމާގެ އަނގަޔަށް ރާހުތް އެޅުމެކޭ، ލޮލަށް ދުން ބުރުވުމެކޭ އެއްފަދަ ކަމެކެވެ.</div><span id="bookmarks26"></span></div><span id="bookmarks26"></span><a id="v27"></a>
+<div class="p"><div id="T26a" class="txs"><span class="v">&#x200f;26</span><span class="vsp">&nbsp;</span>ކަންނެތް މީހަކާ ކަމެއް ހަވާލު ނުކުރާށެވެ.</div> <div id="T26b" class="txs">އެއީ ތިމާގެ އަނގަޔަށް ރާހުތް އެޅުމެކޭ،</div> <div id="T26c" class="txs">ލޮލަށް ދުން ބުރުވުމެކޭ އެއްފަދަ ކަމެކެވެ.</div><span id="bookmarks26"></span></div><span id="bookmarks26"></span><a id="v27"></a>
 <div class="p"><div id="T27a" class="txs"><span class="v">&#x200f;27</span><span class="vsp">&nbsp;</span>މާތްރަސްކަލާނގެއަށް ބިރުވެތިވެ ވާށެވެ.</div> <div id="T27b" class="txs">އޭރުން ކަލޭގެ އުމުރު ދިގުވާނެއެވެ.</div> <div id="T27c" class="txs">ނުބައިކަންތައް ކުރާ މީހާގެ އުމުރު ކުރުވާނެއެވެ.</div><span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
 <div class="p"><div id="T28a" class="txs"><span class="v">&#x200f;28</span><span class="vsp">&nbsp;</span>މާތްރަސްކަލާނގެއަށް އުންމީދުކުރާ މީހާގެ ދިރިއުޅުން އުފާވެރިވާނެއެވެ.</div> <div id="T28b" class="txs">ނުބައިމީހާއަކަށް އުންމީދެއް ނޯވެއެވެ.</div><span id="bookmarks28"></span></div><span id="bookmarks28"></span><a id="v29"></a>
 <div class="p"><div id="T29a" class="txs"><span class="v">&#x200f;29</span><span class="vsp">&nbsp;</span>ތެދުވެރިގޮތުގައި އުޅޭމީހާ މާތްރަސްކަލާނގެ ރައްކާތެރި ކުރައްވައެވެ.</div> <div id="T29b" class="txs">އެކަމަކު ނުބައިމީހާ ނެތިކޮށްލައްވަ އެވެ.</div><span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
@@ -170,7 +173,7 @@ var baseRef  = "20-PRO-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/20_PRO_10.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/20_PRO_10.mp3" />
   </audio>
 </div>
 </div>

@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -33,28 +34,31 @@ var timings = [
     { label: "2b", start: 19.67, end: 23.31 },
     { label: "2c", start: 23.56, end: 27.43 },
     { label: "3", start: 27.68, end: 33.88 },
-    { label: "4a", start: 34.13, end: 37.51 },
-    { label: "4b", start: 37.76, end: 40.67 },
+    { label: "4a", start: 34.13, end: 36.99 },
+    { label: "4b", start: 37.24, end: 40.67 },
     { label: "4c", start: 40.92, end: 49.11 },
     { label: "5a", start: 49.36, end: 51.29 },
-    { label: "5b", start: 51.54, end: 54.15 },
-    { label: "5c", start: 54.4, end: 57.59 },
+    { label: "5b", start: 51.54, end: 53.46 },
+    { label: "5c", start: 53.71, end: 57.59 },
     { label: "5d", start: 57.84, end: 62.26 },
-    { label: "6a", start: 62.51, end: 68.33 },
-    { label: "6b", start: 68.58, end: 72.36 },
-    { label: "7", start: 72.61, end: 81.01 },
+    { label: "6a", start: 62.51, end: 65.27 },
+    { label: "6b", start: 65.52, end: 68.33 },
+    { label: "6c", start: 68.58, end: 72.36 },
+    { label: "7a", start: 72.61, end: 76.1 },
+    { label: "7b", start: 76.35, end: 81.01 },
     { label: "8a", start: 81.26, end: 87.29 },
     { label: "8b", start: 87.54, end: 91.18 },
-    { label: "9a", start: 91.43, end: 96.31 },
-    { label: "9b", start: 96.56, end: 100.79 },
-    { label: "10a", start: 101.04, end: 105.79 },
-    { label: "10b", start: 106.04, end: 111.67 },
-    { label: "11a", start: 111.92, end: 117.71 },
-    { label: "11b", start: 117.96, end: 121 },
+    { label: "9a", start: 91.43, end: 96.41 },
+    { label: "9b", start: 96.66, end: 100.79 },
+    { label: "10a", start: 101.04, end: 106.31 },
+    { label: "10b", start: 106.56, end: 112.19 },
+    { label: "11a", start: 112.44, end: 117.75 },
+    { label: "11b", start: 118, end: 121 },
     { label: "12a", start: 121.25, end: 122.98 },
     { label: "12b", start: 123.23, end: 127.87 },
     { label: "13", start: 128.12, end: 134.1 },
-    { label: "14", start: 134.35, end: 140.75 },
+    { label: "14a", start: 134.35, end: 138.95 },
+    { label: "14b", start: 139.2, end: 140.75 },
     { label: "15a", start: 141, end: 145.11 },
     { label: "15b", start: 145.36, end: 148.99 },
     { label: "15c", start: 149.24, end: 154 },
@@ -65,27 +69,29 @@ var timings = [
     { label: "16d", start: 168.84, end: 175.56 },
     { label: "17", start: 175.81, end: 179.57 },
     { label: "s2", start: 179.82, end: 183.77 },
-    { label: "18", start: 184.02, end: 191.62 },
+    { label: "18a", start: 184.02, end: 188.26 },
+    { label: "18b", start: 188.51, end: 191.62 },
     { label: "19a", start: 191.87, end: 196.35 },
     { label: "19b", start: 196.6, end: 199.23 },
     { label: "19c", start: 199.48, end: 203 },
     { label: "19d", start: 203.25, end: 205.9 },
     { label: "20a", start: 206.15, end: 212.06 },
     { label: "20b", start: 212.31, end: 218.06 },
-    { label: "20c", start: 218.31, end: 223.35 },
-    { label: "21a", start: 223.6, end: 229.29 },
+    { label: "20c", start: 218.31, end: 223.95 },
+    { label: "21a", start: 224.2, end: 229.29 },
     { label: "21b", start: 229.54, end: 233.97 },
     { label: "22a", start: 234.22, end: 240.35 },
     { label: "22b", start: 240.6, end: 244.34 },
     { label: "23", start: 244.59, end: 249.95 },
     { label: "24a", start: 250.2, end: 257.98 },
     { label: "24b", start: 258.23, end: 265.37 },
-    { label: "25a", start: 265.62, end: 271.59 },
-    { label: "25b", start: 271.84, end: 272.82 },
+    { label: "25a", start: 265.62, end: 270.94 },
+    { label: "25b", start: 271.19, end: 272.82 },
     { label: "25c", start: 273.07, end: 277.79 },
-    { label: "26a", start: 278.04, end: 284.03 },
-    { label: "26b", start: 284.28, end: 288.47 },
-    { label: "26c", start: 288.72, end: 291.29 },
+    { label: "26a", start: 278.04, end: 281.27 },
+    { label: "26b", start: 281.52, end: 284.03 },
+    { label: "26c", start: 284.28, end: 288.47 },
+    { label: "26d", start: 288.72, end: 291.29 },
     { label: "27a", start: 291.54, end: 296.18 },
     { label: "27b", start: 296.43, end: 301.27 }
 ];
@@ -121,12 +127,13 @@ var baseRef  = "43-JHN-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='42-LUK-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='43-JHN-014.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='42-LUK-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='43-JHN-014.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޔޫޙަންނާ&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;15&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='43-JHN-016.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='44-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='43-JHN-016.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='44-ACT-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -136,19 +143,19 @@ var baseRef  = "43-JHN-";
 <div class="s"><div id="Ts1" class="txs">ވެލާއި އެވެލުގެ ގޮފިތައް</div></div><a id="v1"></a>
 <div class="m">
 <div class="c-drop">15</div> <div id="T1a" class="txs"><span class="v">&#x200f;1</span><span class="vsp">&nbsp;</span>އީސާގެފާނު އެކަލޭގެފާނުގެ އަސްޙާބީންނަށް ވިދާޅުވިއެވެ.</div> <div id="T1b" class="txs">”އަސްލު މޭބިސްކަދުރު ވެލަކީ އަހަރެން.</div> <div id="T1c" class="txs">އެ ހައްދާ ބަލަހައްޓާ ފަރާތަކީ އަހަރެންގެ ބައްޕާފުޅު.</div><span id="bookmarks1"></span> <a id="v2"></a><div id="T2a" class="txs"><span class="v">&#x200f;2</span><span class="vsp">&nbsp;</span>އަހަރެންނާއި ގުޅިފައިވާ ގޮފިތަކުގެ ތެރެއިން މޭވާ ނާޅާ ހުރިހާ ގޮތްޕެއް އެކަލާނގެ ކަނޑުއްވާ ލައްވާނެ.</div> <div id="T2b" class="txs">އަދި މޭވާ އަޅާ ގޮފިތައް ކޮށްޓަވައި ބަލަހައްޓަވާނެ.</div> <div id="T2c" class="txs">އެއީ އެގޮފިތައް ސާފުވެ ގިނަ މޭވާ އަޅާނެ ގޮތް ވުމަށްޓަކައި.</div><span id="bookmarks2"></span> <a id="v3"></a><div id="T3" class="txs"><span class="v">&#x200f;3</span><span class="vsp">&nbsp;</span>އަހަރެން ކަލޭމެންނަށް އަންގައިދިން ބަސްތަކުގެ ސަބަބުން ކަލޭމެން ތިޔަ ވަނީ އެފަދަ ގޮފިތަކެއް ފަދައިން ކޮށައި ސާފުކުރެވިފައި.</div><span id="bookmarks3"></span> <a id="v4"></a><div id="T4a" class="txs"><span class="v">&#x200f;4</span><span class="vsp">&nbsp;</span>ކަލޭމެން އަބަދުވެސް އަހަރެންނާއި ގުޅިފައި ތިބޭތި.</div> <div id="T4b" class="txs">އޭރުން އަހަރެން ވެސް ކަލޭމެންނާއި ގުޅިފައިވާނަން.</div> <div id="T4c" class="txs">ގަހާއި ވަކިވެފައިވާ ގޮފިގަނޑެއްގައި މޭވާ ނާޅާނެ ފަދައިން ކަލޭމެން އަހަރެންނާއި ވަކިވެއްޖެ ނަމަ ކަލޭމެން ކުރާ ކަމަކުން ވެސް މޭވާއެއް ނުލިބޭނެ.</div><span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
-<div class="p"><div id="T5a" class="txs"><span class="v">&#x200f;5</span><span class="vsp">&nbsp;</span>އަހަރެން މީ މޭބިސްކަދުރު ވެޔޮ.</div> <div id="T5b" class="txs">ކަލޭމެންނީ އެވެލުގެ ގޮފިތައް.</div> <div id="T5c" class="txs">އަހަރެންނާއި ގުޅިފައިވާ މީހުން ކިބައިން އެތައް މޭވާއެއް ލިބޭނެ.</div> <div id="T5d" class="txs">ނަމަވެސް އަހަރެންނާއި ގުޅިފައި ނުވާ މީހުން ކިބައިން އެއްވެސް މޭވާއެއް ނުލިބޭނެ.</div><span id="bookmarks5"></span> <a id="v6"></a><div id="T6a" class="txs"><span class="v">&#x200f;6</span><span class="vsp">&nbsp;</span>އަހަރެންނާ ގުޅިގެން ނުވާ މީހެއް ނަމަ،</div> <div id="T6b" class="txs">މިލައި ހިކިފައިވާ ގޮފިގަނޑެއް ފަދައިން ކަނޑާ އެއްލާލެވޭނެ. އަދި އެފަދަ ގޮފިތައް ހިކިގެން ދިޔައީމާ އެއްކޮށްފައި އަންދާލެވޭނެ.</div><span id="bookmarks6"></span> <a id="v7"></a><div id="T7" class="txs"><span class="v">&#x200f;7</span><span class="vsp">&nbsp;</span>ކަލޭމެން އަހަންނާ އަދި އަހަރެންގެ ބަސްތަކާ ގުޅިފައިވާނަމަ، ކަލޭމެން ކޮންމެ ކަމަކަށް އެދި ދެންނެވިޔަސް އެކަމެއް މާތްރަސްކަލާނގެ ހިންމަވައި ދެއްވާނެ.</div><span id="bookmarks7"></span> <a id="v8"></a><div id="T8a" class="txs"><span class="v">&#x200f;8</span><span class="vsp">&nbsp;</span>ކަލޭމެން ކިބައިން ގިނަ މޭވާ އެޅުމުން ކަލޭމެންނަކީ ތެދުހިތުން އަހަރެންނަށް އީމާންވާ މީހުން ކަން އެނގޭނެ.</div> <div id="T8b" class="txs">އަދި މިކަމުގެ ސަބަބުން ބައްޕާފުޅުގެ ނަންފުޅު މަތިވެރި ވާނެ.</div><span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
-<div class="p"><div id="T9a" class="txs"><span class="v">&#x200f;9</span><span class="vsp">&nbsp;</span>އަހަރެންގެ ބައްޕާފުޅު އަހަރެން ދެކެ ލޯބިވާ ފަދައިން ހަމަ އަހަރެން ވެސް ކަލޭމެން ދެކެ ލޯބިވަން.</div> <div id="T9b" class="txs">ވީމާ އަހަރެން ކަލޭމެން ދެކެ ވާ ލޯތްބާގުޅި ލާމެހިގެން ތިބޭތި.</div><span id="bookmarks9"></span> <a id="v10"></a><div id="T10a" class="txs"><span class="v">&#x200f;10</span><span class="vsp">&nbsp;</span>އަހަރެންގެ އަމުރަށް ކިޔަމަން ވާނަމަ ކަލޭމެން ތިބޭނީ އަހަރެންގެ ލޯތްބާ ގުޅިފައި.</div> <div id="T10b" class="txs">އެއީ އަހަރެން ބައްޕާފުޅު ބަސް އެހުމުގެ ސަބަބުން އަހަރެން ބައްޕާފުޅުގެ ލޯތްބާ ގުޅިފައިވާ ފަދައިން.</div><span id="bookmarks10"></span> <a id="v11"></a><div id="T11a" class="txs"><span class="v">&#x200f;11</span><span class="vsp">&nbsp;</span>އަހަރެން މިހެން މި ބުނީ އަހަރެންގެ ކިބައިގައި މިވާ އުފާ ކަލޭމެންގެ ކިބައިގައި ވުމަށްޓަކައި.</div> <div id="T11b" class="txs">އެގޮތުން ކަލޭމެންގެ އުފާ ވެސް ފުރިހަމަ ވެގެން ދިއުމަށްޓަކައި.</div><span id="bookmarks11"></span> <a id="v12"></a><div id="T12a" class="txs"><span class="v">&#x200f;12</span><span class="vsp">&nbsp;</span>އަހަރެން އަމުރު ކުރަނީ މި ކަމަށް.</div> <div id="T12b" class="txs">އަހަރެން ކަލޭމެން ދެކެ ލޯބިވާ ފަދައިން ކަލޭމެން ވެސް އެކަކު އަނެކަކު ދެކެ ލޯބި ވޭ!</div><span id="bookmarks12"></span> <a id="v13"></a><div id="T13" class="txs"><span class="v">&#x200f;13</span><span class="vsp">&nbsp;</span>އެންމެ މަތިވެރި ގޮތެއްގައި ރައްޓެހިން ދެކެ ލޯބިވާ މީހާ އެރަށްޓެހިންނަށްޓަކައި އަމިއްލަ ފުރާނަ ދޫކޮށްލާނެ.</div><span id="bookmarks13"></span> <a id="v14"></a><div id="T14" class="txs"><span class="v">&#x200f;14</span><span class="vsp">&nbsp;</span>ކަލޭމެން އަހަރެންގެ ބަސްތަކަށް ކިޔަމަން ވަނީ ނަމަ ކަލޭމެންނަކީ އަހަރެންގެ ރަޙުމަތްތެރިން، އަދި ގާތް މީހުން.</div><span id="bookmarks14"></span> <a id="v15"></a><div id="T15a" class="txs"><span class="v">&#x200f;15</span><span class="vsp">&nbsp;</span>ނޯކަރުންނަކަށް އެމީހުންގެ ވެރިމީހާ ކުރަން އުޅޭ ކަންތައްތަކެއް ކިޔައެއް ނުދޭނެ.</div> <div id="T15b" class="txs">އަހަރެން ކަލޭމެންނާއި މެދު މިހާރު މިދެކެނީކީ އަހަރެންގެ ނޯކަރުންގެ ގޮތަކު ނޫން.</div><div id="T15c" class="txs"><span class="footnote selectable" id="F-0"><sup>❖</sup></span> އަހަރެން ކަލޭމެންނާއި ދޭތެރޭ ކަންތައް ކުރަނީ ކަލޭމެންނަކީ އަހަރެންގެ ރައްޓެހިންގެ ގޮތުގައި.</div> <div id="T15d" class="txs">އެހެންކަމުން ބައްޕާފުޅު އެންގެވި ހުރިހާ ކަމެއް އަހަރެން ކަލޭމެންނަށް އަންގައިދިނިން.</div><span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="p"><div id="T5a" class="txs"><span class="v">&#x200f;5</span><span class="vsp">&nbsp;</span>އަހަރެން މީ މޭބިސްކަދުރު ވެޔޮ.</div> <div id="T5b" class="txs">ކަލޭމެންނީ އެވެލުގެ ގޮފިތައް.</div> <div id="T5c" class="txs">އަހަރެންނާއި ގުޅިފައިވާ މީހުން ކިބައިން އެތައް މޭވާއެއް ލިބޭނެ.</div> <div id="T5d" class="txs">ނަމަވެސް އަހަރެންނާއި ގުޅިފައި ނުވާ މީހުން ކިބައިން އެއްވެސް މޭވާއެއް ނުލިބޭނެ.</div><span id="bookmarks5"></span> <a id="v6"></a><div id="T6a" class="txs"><span class="v">&#x200f;6</span><span class="vsp">&nbsp;</span>އަހަރެންނާ ގުޅިގެން ނުވާ މީހެއް ނަމަ،</div> <div id="T6b" class="txs">މިލައި ހިކިފައިވާ ގޮފިގަނޑެއް ފަދައިން ކަނޑާ އެއްލާލެވޭނެ.</div> <div id="T6c" class="txs">އަދި އެފަދަ ގޮފިތައް ހިކިގެން ދިޔައީމާ އެއްކޮށްފައި އަންދާލެވޭނެ.</div><span id="bookmarks6"></span> <a id="v7"></a><div id="T7a" class="txs"><span class="v">&#x200f;7</span><span class="vsp">&nbsp;</span>ކަލޭމެން އަހަންނާ އަދި އަހަރެންގެ ބަސްތަކާ ގުޅިފައިވާނަމަ،</div> <div id="T7b" class="txs">ކަލޭމެން ކޮންމެ ކަމަކަށް އެދި ދެންނެވިޔަސް އެކަމެއް މާތްރަސްކަލާނގެ ހިންމަވައި ދެއްވާނެ.</div><span id="bookmarks7"></span> <a id="v8"></a><div id="T8a" class="txs"><span class="v">&#x200f;8</span><span class="vsp">&nbsp;</span>ކަލޭމެން ކިބައިން ގިނަ މޭވާ އެޅުމުން ކަލޭމެންނަކީ ތެދުހިތުން އަހަރެންނަށް އީމާންވާ މީހުން ކަން އެނގޭނެ.</div> <div id="T8b" class="txs">އަދި މިކަމުގެ ސަބަބުން ބައްޕާފުޅުގެ ނަންފުޅު މަތިވެރި ވާނެ.</div><span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><div id="T9a" class="txs"><span class="v">&#x200f;9</span><span class="vsp">&nbsp;</span>އަހަރެންގެ ބައްޕާފުޅު އަހަރެން ދެކެ ލޯބިވާ ފަދައިން ހަމަ އަހަރެން ވެސް ކަލޭމެން ދެކެ ލޯބިވަން.</div> <div id="T9b" class="txs">ވީމާ އަހަރެން ކަލޭމެން ދެކެ ވާ ލޯތްބާގުޅި ލާމެހިގެން ތިބޭތި.</div><span id="bookmarks9"></span> <a id="v10"></a><div id="T10a" class="txs"><span class="v">&#x200f;10</span><span class="vsp">&nbsp;</span>އަހަރެންގެ އަމުރަށް ކިޔަމަން ވާނަމަ ކަލޭމެން ތިބޭނީ އަހަރެންގެ ލޯތްބާ ގުޅިފައި.</div> <div id="T10b" class="txs">އެއީ އަހަރެން ބައްޕާފުޅު ބަސް އެހުމުގެ ސަބަބުން އަހަރެން ބައްޕާފުޅުގެ ލޯތްބާ ގުޅިފައިވާ ފަދައިން.</div><span id="bookmarks10"></span> <a id="v11"></a><div id="T11a" class="txs"><span class="v">&#x200f;11</span><span class="vsp">&nbsp;</span>އަހަރެން މިހެން މި ބުނީ އަހަރެންގެ ކިބައިގައި މިވާ އުފާ ކަލޭމެންގެ ކިބައިގައި ވުމަށްޓަކައި.</div> <div id="T11b" class="txs">އެގޮތުން ކަލޭމެންގެ އުފާ ވެސް ފުރިހަމަ ވެގެން ދިއުމަށްޓަކައި.</div><span id="bookmarks11"></span> <a id="v12"></a><div id="T12a" class="txs"><span class="v">&#x200f;12</span><span class="vsp">&nbsp;</span>އަހަރެން އަމުރު ކުރަނީ މި ކަމަށް.</div> <div id="T12b" class="txs">އަހަރެން ކަލޭމެން ދެކެ ލޯބިވާ ފަދައިން ކަލޭމެން ވެސް އެކަކު އަނެކަކު ދެކެ ލޯބި ވޭ!</div><span id="bookmarks12"></span> <a id="v13"></a><div id="T13" class="txs"><span class="v">&#x200f;13</span><span class="vsp">&nbsp;</span>އެންމެ މަތިވެރި ގޮތެއްގައި ރައްޓެހިން ދެކެ ލޯބިވާ މީހާ އެރަށްޓެހިންނަށްޓަކައި އަމިއްލަ ފުރާނަ ދޫކޮށްލާނެ.</div><span id="bookmarks13"></span> <a id="v14"></a><div id="T14a" class="txs"><span class="v">&#x200f;14</span><span class="vsp">&nbsp;</span>ކަލޭމެން އަހަރެންގެ ބަސްތަކަށް ކިޔަމަން ވަނީ ނަމަ ކަލޭމެންނަކީ އަހަރެންގެ ރަޙުމަތްތެރިން،</div> <div id="T14b" class="txs">އަދި ގާތް މީހުން.</div><span id="bookmarks14"></span> <a id="v15"></a><div id="T15a" class="txs"><span class="v">&#x200f;15</span><span class="vsp">&nbsp;</span>ނޯކަރުންނަކަށް އެމީހުންގެ ވެރިމީހާ ކުރަން އުޅޭ ކަންތައްތަކެއް ކިޔައެއް ނުދޭނެ.</div> <div id="T15b" class="txs">އަހަރެން ކަލޭމެންނާއި މެދު މިހާރު މިދެކެނީކީ އަހަރެންގެ ނޯކަރުންގެ ގޮތަކު ނޫން.</div><div id="T15c" class="txs"><span class="footnote selectable" id="F-0"><sup>❖</sup></span> އަހަރެން ކަލޭމެންނާއި ދޭތެރޭ ކަންތައް ކުރަނީ ކަލޭމެންނަކީ އަހަރެންގެ ރައްޓެހިންގެ ގޮތުގައި.</div> <div id="T15d" class="txs">އެހެންކަމުން ބައްޕާފުޅު އެންގެވި ހުރިހާ ކަމެއް އަހަރެން ކަލޭމެންނަށް އަންގައިދިނިން.</div><span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
 <div class="p"><div id="T16a" class="txs"><span class="v">&#x200f;16</span><span class="vsp">&nbsp;</span>ކަލޭމެން އަހަރެން ޚިޔާރެއް ނުކުރޭ.</div> <div id="T16b" class="txs">ކަލޭމެން ޚިޔާރު ކުރީ އަހަރެން.</div> <div id="T16c" class="txs">އަބަދުގެ އަބަދަށް ދެމިހުންނަ ފަދަ މޭވާ ލިބޭނެ މަސައްކަތް ކުރުމަށް ކަލޭމެން ޚިޔާރު ކޮށް ފޮނުވީ އަހަރެން.</div> <div id="T16d" class="txs">އެއީ އޭރުން ކަލޭމެން އަހަރެންގެ ނަމުގައި އެދުނު ކޮންމެ ކަމެއް ވެސް އަހަރެންގެ ބައްޕާފުޅު ކަލޭމެންނަށް ފުއްދަވާ ދެއްވާނެ.</div><span id="bookmarks16"></span> <a id="v17"></a><div id="T17" class="txs"><span class="v">&#x200f;17</span><span class="vsp">&nbsp;</span>އަހަރެން ކަލޭމެންނަށް އެކަކު އަނެކަކު ދެކެ ލޯބިވުމަށް އަމުރުކުރަން.“</div><span id="bookmarks17"></span></div>
 
 <div class="s"><div id="Ts2" class="txs">ދުނިޔޭގެ މީސްތަކުން އީސާގެފާނުގެ އަސްޙާބީންނަށް ނަފުރަތުކުރާނެ</div></div><span id="bookmarks17"></span><a id="v18"></a>
-<div class="p"><div id="T18" class="txs"><span class="v">&#x200f;18</span><span class="vsp">&nbsp;</span>”މި ދުނިޔޭގެ މީހުން ކަލޭމެން ދެކެ ނަފުރަތުކޮށް ރުޅިއަންނަ ހިނދު ހަނދާން ކުރޭ، އެމީހުން އެންމެފުރަތަމަ ނަފުރަތުކޮށް ރުޅިއައީ އަހަރެން ދެކެ.</div><span id="bookmarks18"></span> <a id="v19"></a><div id="T19a" class="txs"><span class="v">&#x200f;19</span><span class="vsp">&nbsp;</span>ކަލޭމެން ވެސް ތީ ދުނިޔެވީ މީހުން ކަމުގައިވާނަމަ އެ މީހުން ކަލޭމެން ދެކެ ލޯބިވާނެ.</div> <div id="T19b" class="txs">އެކަމަކު މިހާރު ކަލޭމެން ތީ އެފަދަ ބައެއް ނޫން.</div> <div id="T19c" class="txs">އަހަރެން ޚިޔާރު ކުރީ ކަލޭމެން އެ ދުނިޔެއިން ބޭރަށް ނެރެލުމަށް.</div> <div id="T19d" class="txs">ކަލޭމެން ދެކެ އެމީހުން ރުޅި އަންނަނީ އެހެން ވީމާ.</div><span id="bookmarks19"></span> <a id="v20"></a><div id="T20a" class="txs"><span class="v">&#x200f;20</span><span class="vsp">&nbsp;</span>ނޯކަރަކު އެމީހެއްގެ ވެރިމީހާއަށް ވުރެ މަތިވެރިއެއް ނުވާނެއޭ އަހަރެން ކަލޭމެން ގާތު ބުނިކަން ހަނދާން އެބަ ހުރިތަ؟</div><div id="T20b" class="txs"><span class="footnote selectable" id="F-1"><sup>❖</sup></span> އެމީހުން އަހަރެންނާމެދު ނުބައިކޮށް ކަންކުރިއިރު ކަލޭމެންނާމެދު ވެސް ނުބައިކޮށް ކަންކުރާނެއެންނު.</div> <div id="T20c" class="txs">އަހަރެންގެ ބަސްތަކަށް އެމީހުން އަމަލު ކުރާނަމަ ކަލޭމެންގެ ބަސްތަކަށް ވެސް އެމީހުން އަމަލުކުރާނެ.</div><span id="bookmarks20"></span> <a id="v21"></a><div id="T21a" class="txs"><span class="v">&#x200f;21</span><span class="vsp">&nbsp;</span>ދުނިޔޭގެ މީސްތަކުން ކަލޭމެންނަކީ އަހަރެންގެ މީހުންނަށް ވީތީ ކަލޭމެން ދެކެ ނަފުރަތުކޮށް ރުޅިއަންނާނެ.</div> <div id="T21b" class="txs">އެއީ އަހަރެން ފޮނުއްވި ފަރާތް ކަމުގައިވާ މާތްރަސްކަލާނގެ އެމީހުން ނުދަންނާތީ.</div><span id="bookmarks21"></span> <a id="v22"></a><div id="T22a" class="txs"><span class="v">&#x200f;22</span><span class="vsp">&nbsp;</span>އަހަރެން މި ދުނިޔެއަށް އައިސް އެމީހުންގާތުގައި އެވާހަކަތައް ނުދެއްކިނަމަ އެމީހުން ކުށްވެރިއެއް ނުވީސް.</div> <div id="T22b" class="txs">އެކަމަކު މިހާރު އެމީހުންގެ ފާފަތަކާ މެދު އެމީހުންނަށް ދެއްކޭނެ އުޒުރެއް ނެތް.</div><span id="bookmarks22"></span> <a id="v23"></a><div id="T23" class="txs"><span class="v">&#x200f;23</span><span class="vsp">&nbsp;</span>އަހަރެން ދެކެ ނަފުރަތުކޮށް ރުޅިއަންނަ ކޮންމެ މީހަކު އަހަރެންގެ ބައްޕާފުޅު ދެކެވެސް ނަފުރަތުކޮށް ރުޅިއަންނާނެ.</div><span id="bookmarks23"></span> <a id="v24"></a><div id="T24a" class="txs"><span class="v">&#x200f;24</span><span class="vsp">&nbsp;</span>މި ދުނިޔޭގައި އެކަކަށް ވެސް ދެއްކިފައިނުވާވަރުގެ މާނަ ފުން މުޢުޖިޒާތްތަކެއް އަހަރެން ދައްކާފައި ނުވާނަމަ އެމީހުން ކުށްވެރިއެއް ނުކުރެވުނީސް.</div> <div id="T24b" class="txs">ނަމަވެސް އަހަރެން ކޮށްދިން ހުރިހާ ކަމެއް ދުށުމަށް ފަހު ވެސް އެމީހުން އަހަރެންނާއި އަދި އަހަރެންގެ ބައްޕާފުޅަށް ވެސް ނަފުރަތުކޮށް ރުޅިއާދޭ.</div><span id="bookmarks24"></span> <a id="v25"></a><div id="T25a" class="txs"><span class="v">&#x200f;25</span><span class="vsp">&nbsp;</span>މިހެން ކަންތައް ވުމުގެ ސަބަބުން ބާވައިލެއްވުނު ފޮތްތަކުގައި ލިޔެވިގެންވީ މިބަސްފުޅު ވެސް ތެދަކަށް ވެއްޖެ.</div> <div id="T25b" class="txs">އެއީ ލިޔެވިގެންވޭ.</div> <div id="T25c" class="txs">’އެމީހުން އަހަރެންދެކެ ރުޅިއައިސް ނަފްރަތުކުރީ އެއްވެސް ސަބަބަކާއި ނުލައޭ.‘</div><span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
-<div class="p"><div id="T26a" class="txs"><span class="v">&#x200f;26</span><span class="vsp">&nbsp;</span>ބައްޕާފުޅުގެ ފަރާތުން ފޮނުއްވޭ އެހީތެރިޔާ ކަމަށް ވާ،</div> <div id="T26b" class="txs">މާތްރޫޙުފުޅު އަހަރެން ކަލޭމެންގެ ގާތަށް ފޮނުއްވާނަން.</div> <div id="T26c" class="txs">އެރޫޙުފުޅު ކަލޭމެންނަށް ތެދަކީ ކޮބައިކަން ފުރިހަމައަށް އަންގަވައިދެއްވާނެ. އެ ރޫޙުފުޅު އަހަރެންނާއި މެދު ހެކިދޭނެ.</div><span id="bookmarks26"></span> <a id="v27"></a><div id="T27a" class="txs"><span class="v">&#x200f;27</span><span class="vsp">&nbsp;</span>އަދި ކަލޭމެން ވެސް އަހަރެންނާ ބެހޭގޮތުން ކަންތައް ހިނގިގޮތާމެދު ހެކިދޭން ޖެހޭނެ.</div> <div id="T27b" class="txs">އެއީ ފެށުނީއްސުރެވެސް އަހަރެން ކުރިކަންތައް ކަލޭމެންނަށް ފެނިފައިވާނެތީ.“</div><span id="bookmarks27"></span></div>
+<div class="p"><div id="T18a" class="txs"><span class="v">&#x200f;18</span><span class="vsp">&nbsp;</span>”މި ދުނިޔޭގެ މީހުން ކަލޭމެން ދެކެ ނަފުރަތުކޮށް ރުޅިއަންނަ ހިނދު ހަނދާން ކުރޭ،</div> <div id="T18b" class="txs">އެމީހުން އެންމެފުރަތަމަ ނަފުރަތުކޮށް ރުޅިއައީ އަހަރެން ދެކެ.</div><span id="bookmarks18"></span> <a id="v19"></a><div id="T19a" class="txs"><span class="v">&#x200f;19</span><span class="vsp">&nbsp;</span>ކަލޭމެން ވެސް ތީ ދުނިޔެވީ މީހުން ކަމުގައިވާނަމަ އެ މީހުން ކަލޭމެން ދެކެ ލޯބިވާނެ.</div> <div id="T19b" class="txs">އެކަމަކު މިހާރު ކަލޭމެން ތީ އެފަދަ ބައެއް ނޫން.</div> <div id="T19c" class="txs">އަހަރެން ޚިޔާރު ކުރީ ކަލޭމެން އެ ދުނިޔެއިން ބޭރަށް ނެރެލުމަށް.</div> <div id="T19d" class="txs">ކަލޭމެން ދެކެ އެމީހުން ރުޅި އަންނަނީ އެހެން ވީމާ.</div><span id="bookmarks19"></span> <a id="v20"></a><div id="T20a" class="txs"><span class="v">&#x200f;20</span><span class="vsp">&nbsp;</span>ނޯކަރަކު އެމީހެއްގެ ވެރިމީހާއަށް ވުރެ މަތިވެރިއެއް ނުވާނެއޭ އަހަރެން ކަލޭމެން ގާތު ބުނިކަން ހަނދާން އެބަ ހުރިތަ؟</div><div id="T20b" class="txs"><span class="footnote selectable" id="F-1"><sup>❖</sup></span> އެމީހުން އަހަރެންނާމެދު ނުބައިކޮށް ކަންކުރިއިރު ކަލޭމެންނާމެދު ވެސް ނުބައިކޮށް ކަންކުރާނެއެންނު.</div> <div id="T20c" class="txs">އަހަރެންގެ ބަސްތަކަށް އެމީހުން އަމަލު ކުރާނަމަ ކަލޭމެންގެ ބަސްތަކަށް ވެސް އެމީހުން އަމަލުކުރާނެ.</div><span id="bookmarks20"></span> <a id="v21"></a><div id="T21a" class="txs"><span class="v">&#x200f;21</span><span class="vsp">&nbsp;</span>ދުނިޔޭގެ މީސްތަކުން ކަލޭމެންނަކީ އަހަރެންގެ މީހުންނަށް ވީތީ ކަލޭމެން ދެކެ ނަފުރަތުކޮށް ރުޅިއަންނާނެ.</div> <div id="T21b" class="txs">އެއީ އަހަރެން ފޮނުއްވި ފަރާތް ކަމުގައިވާ މާތްރަސްކަލާނގެ އެމީހުން ނުދަންނާތީ.</div><span id="bookmarks21"></span> <a id="v22"></a><div id="T22a" class="txs"><span class="v">&#x200f;22</span><span class="vsp">&nbsp;</span>އަހަރެން މި ދުނިޔެއަށް އައިސް އެމީހުންގާތުގައި އެވާހަކަތައް ނުދެއްކިނަމަ އެމީހުން ކުށްވެރިއެއް ނުވީސް.</div> <div id="T22b" class="txs">އެކަމަކު މިހާރު އެމީހުންގެ ފާފަތަކާ މެދު އެމީހުންނަށް ދެއްކޭނެ އުޒުރެއް ނެތް.</div><span id="bookmarks22"></span> <a id="v23"></a><div id="T23" class="txs"><span class="v">&#x200f;23</span><span class="vsp">&nbsp;</span>އަހަރެން ދެކެ ނަފުރަތުކޮށް ރުޅިއަންނަ ކޮންމެ މީހަކު އަހަރެންގެ ބައްޕާފުޅު ދެކެވެސް ނަފުރަތުކޮށް ރުޅިއަންނާނެ.</div><span id="bookmarks23"></span> <a id="v24"></a><div id="T24a" class="txs"><span class="v">&#x200f;24</span><span class="vsp">&nbsp;</span>މި ދުނިޔޭގައި އެކަކަށް ވެސް ދެއްކިފައިނުވާވަރުގެ މާނަ ފުން މުޢުޖިޒާތްތަކެއް އަހަރެން ދައްކާފައި ނުވާނަމަ އެމީހުން ކުށްވެރިއެއް ނުކުރެވުނީސް.</div> <div id="T24b" class="txs">ނަމަވެސް އަހަރެން ކޮށްދިން ހުރިހާ ކަމެއް ދުށުމަށް ފަހު ވެސް އެމީހުން އަހަރެންނާއި އަދި އަހަރެންގެ ބައްޕާފުޅަށް ވެސް ނަފުރަތުކޮށް ރުޅިއާދޭ.</div><span id="bookmarks24"></span> <a id="v25"></a><div id="T25a" class="txs"><span class="v">&#x200f;25</span><span class="vsp">&nbsp;</span>މިހެން ކަންތައް ވުމުގެ ސަބަބުން ބާވައިލެއްވުނު ފޮތްތަކުގައި ލިޔެވިގެންވީ މިބަސްފުޅު ވެސް ތެދަކަށް ވެއްޖެ.</div> <div id="T25b" class="txs">އެއީ ލިޔެވިގެންވޭ.</div> <div id="T25c" class="txs">’އެމީހުން އަހަރެންދެކެ ރުޅިއައިސް ނަފްރަތުކުރީ އެއްވެސް ސަބަބަކާއި ނުލައޭ.‘</div><span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><div id="T26a" class="txs"><span class="v">&#x200f;26</span><span class="vsp">&nbsp;</span>ބައްޕާފުޅުގެ ފަރާތުން ފޮނުއްވޭ އެހީތެރިޔާ ކަމަށް ވާ،</div> <div id="T26b" class="txs">މާތްރޫޙުފުޅު އަހަރެން ކަލޭމެންގެ ގާތަށް ފޮނުއްވާނަން.</div> <div id="T26c" class="txs">އެރޫޙުފުޅު ކަލޭމެންނަށް ތެދަކީ ކޮބައިކަން ފުރިހަމައަށް އަންގަވައިދެއްވާނެ.</div> <div id="T26d" class="txs">އެ ރޫޙުފުޅު އަހަރެންނާއި މެދު ހެކިދޭނެ.</div><span id="bookmarks26"></span> <a id="v27"></a><div id="T27a" class="txs"><span class="v">&#x200f;27</span><span class="vsp">&nbsp;</span>އަދި ކަލޭމެން ވެސް އަހަރެންނާ ބެހޭގޮތުން ކަންތައް ހިނގިގޮތާމެދު ހެކިދޭން ޖެހޭނެ.</div> <div id="T27b" class="txs">އެއީ ފެށުނީއްސުރެވެސް އަހަރެން ކުރިކަންތައް ކަލޭމެންނަށް ފެނިފައިވާނެތީ.“</div><span id="bookmarks27"></span></div>
 </div>
 
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/43_JHN_15.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/43_JHN_15.mp3" />
   </audio>
 </div>
 </div>

@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -25,29 +26,30 @@ $(window).load(function() {
 var pop = Popcorn("#audio");
 
 var timings = [
-    { label: "s1", start: 1.4, end: 3.89 },
-    { label: "1a", start: 4.14, end: 9.39 },
+    { label: "s1", start: 1.4, end: 4.71 },
+    { label: "1a", start: 4.96, end: 9.39 },
     { label: "1b", start: 9.64, end: 14.5 },
     { label: "2a", start: 14.75, end: 17.17 },
     { label: "2b", start: 17.42, end: 26.71 },
     { label: "2c", start: 26.96, end: 27.43 },
     { label: "2d", start: 27.68, end: 28.69 },
-    { label: "2e", start: 28.94, end: 29.99 },
-    { label: "3a", start: 30.24, end: 34.93 },
+    { label: "2e", start: 28.94, end: 29.19 },
+    { label: "2f", start: 29.44, end: 30.51 },
+    { label: "3a", start: 30.76, end: 34.93 },
     { label: "3b", start: 35.18, end: 38.9 },
     { label: "3c", start: 39.15, end: 42.12 },
     { label: "4a", start: 42.37, end: 47.24 },
     { label: "4b", start: 47.49, end: 50.52 },
-    { label: "4c", start: 50.77, end: 53.14 },
-    { label: "4d", start: 53.39, end: 53.91 },
+    { label: "4c", start: 50.77, end: 53.35 },
+    { label: "4d", start: 53.6, end: 53.91 },
     { label: "4e", start: 54.16, end: 56.92 },
     { label: "4f", start: 57.17, end: 58.35 },
     { label: "5a", start: 58.6, end: 62.18 },
     { label: "5b", start: 62.43, end: 64.99 },
     { label: "6a", start: 65.24, end: 66.79 },
     { label: "6b", start: 67.04, end: 69.84 },
-    { label: "7a", start: 70.09, end: 76.47 },
-    { label: "7b", start: 76.72, end: 78.86 },
+    { label: "7a", start: 70.09, end: 75.61 },
+    { label: "7b", start: 75.86, end: 78.86 },
     { label: "7c", start: 79.11, end: 82.34 },
     { label: "7d", start: 82.59, end: 84.37 },
     { label: "8a", start: 84.62, end: 87.61 },
@@ -84,8 +86,8 @@ var timings = [
     { label: "18a", start: 226.5, end: 232.37 },
     { label: "18b", start: 232.62, end: 237.02 },
     { label: "19a", start: 237.27, end: 239.13 },
-    { label: "19b", start: 239.38, end: 240.23 },
-    { label: "19c", start: 240.48, end: 243.03 },
+    { label: "19b", start: 239.38, end: 240.31 },
+    { label: "19c", start: 240.56, end: 243.03 },
     { label: "19d", start: 243.28, end: 244.82 },
     { label: "19e", start: 245.07, end: 249.15 },
     { label: "19f", start: 249.4, end: 251.33 },
@@ -93,8 +95,8 @@ var timings = [
     { label: "20a", start: 255.96, end: 258.63 },
     { label: "20b", start: 258.88, end: 259.9 },
     { label: "20c", start: 260.15, end: 265 },
-    { label: "20d", start: 265.25, end: 267.93 },
-    { label: "20e", start: 268.18, end: 272.06 },
+    { label: "20d", start: 265.25, end: 267.87 },
+    { label: "20e", start: 268.12, end: 272.06 },
     { label: "21a", start: 272.31, end: 274.06 },
     { label: "21b", start: 274.31, end: 281.48 },
     { label: "22a", start: 281.73, end: 283.32 },
@@ -136,12 +138,13 @@ var baseRef  = "08-RUT-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='02-EXO-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='08-RUT-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='02-EXO-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='08-RUT-001.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ރާޢޫތު&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='08-RUT-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='09-1SA-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='08-RUT-003.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='09-1SA-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -152,7 +155,7 @@ var baseRef  = "08-RUT-";
 <div class="m">
 <div class="c-drop">2</div> <div id="T1a" class="txs"><span class="v">&#x200f;1</span><span class="vsp">&nbsp;</span>ނުޢުމީގެ ފިރި އަލީމާލިކުގެ ގާތް ތިމާގެ ބޫޢަޒު އޭ ނަމަކަށް ކިއުނު މީހަކު ވިއެވެ.</div> <div id="T1b" class="txs">މި ބޫޢަޒު އަކީ ވަރަށް މުއްސަނދި އަދި އެރަށުގެ ބަސްވިކޭމީހުންގެ ތެރެއިން ހިމެނޭ މީހެކެވެ.</div><span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
 <div class="p"><div id="T2a" class="txs"><span class="v">&#x200f;2</span><span class="vsp">&nbsp;</span>އެއްދުވަހަކު ރާޢޫތު ނުޢުމީއަށް ބުންޏެވެ.</div> <div id="T2b" class="txs">”އަޅުގަނޑު މިދަނީ ގޮވާން އެއްކުރުމަށް ދަނޑުތަކުގައި މަސައްކަތް ކުރާ މީހުންނަށް ނުނެގި އުކާލެވިފައި ހުންނަ ގޮވާން ހޮވުމުގެ ހުއްދަ ދޭނޭ ދަނޑުވެރިޔަކު ފެނޭތޯ.“</div></div>
-<div class="p"><div id="T2c" class="txs">ނުޢުމީ ބުންޏެވެ.</div> <div id="T2d" class="txs">”އެންމެ ރަނގަޅު.</div> <div id="T2e" class="txs">ދޭ، މަގޭ ދަރިފުޅާ.“</div><span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="p"><div id="T2c" class="txs">ނުޢުމީ ބުންޏެވެ.</div> <div id="T2d" class="txs">”އެންމެ ރަނގަޅު.</div> <div id="T2e" class="txs">ދޭ،</div> <div id="T2f" class="txs">މަގޭ ދަރިފުޅާ.“</div><span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
 <div class="p"><div id="T3a" class="txs"><span class="v">&#x200f;3</span><span class="vsp">&nbsp;</span>ދެން ރާޢޫތު ގޮސް ބާކީ ގޮވާން އެއްކުރުމުގެ ގޮތުން ދަނޑެއްގައި މަސައްކަތް ފަށައިފިއެވެ.</div> <div id="T3b" class="txs">ކަންދިމާވި ގޮތުން ރާޢޫތަށް މި ދެވުނީ ބޫޢަޒްގެ ދަނަޑަކަށެވެ.</div> <div id="T3c" class="txs">ބޫޢަޒްއަކީ އަލީމާލިކުގެ ތިމާގެ މީހެކެވެ.</div><span id="bookmarks3"></span> <a id="v4"></a><div id="T4a" class="txs"><span class="v">&#x200f;4</span><span class="vsp">&nbsp;</span>ބޫޢަޒު އޭނާގެ ދަނޑުގެ ކަންތައްތައް ހުރިގޮތް ބެލުމަށް ބައިތުލަޙަމުން އައެވެ.</div> <div id="T4b" class="txs">އޭނާގެ މަސައްކަތްތެރިންނާ އޭނާ ސަލާމް ކުރިއެވެ.</div> <div id="T4c" class="txs">”މާތްރަސްކަލާނގެ ކަލޭމެންނާ އެކުގައި ވާށި.“</div> <div id="T4d" class="txs">އޭނާ ބުންޏެވެ.</div> <div id="T4e" class="txs">”މާތްރަސްކަލާނގެ ތިޔަ މަނިކުފާނަށް ބަރަކާތްލައްވާށި.“</div> <div id="T4f" class="txs">ދަނޑުވެރިން ޖަވާބު ދިނެވެ.</div><span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
 <div class="p"><div id="T5a" class="txs"><span class="v">&#x200f;5</span><span class="vsp">&nbsp;</span>އެވަގުތު ބޫޢަޒުގެ މަސައްކަތްތެރިންގެ ވެރިޔަކަށް ހުރި މީހާއަށް ބުންޏެވެ.</div> <div id="T5b" class="txs">”އެހެރަ ޒުވާން އަންހެން ކުއްޖާއަކީ ކާކުތަ؟“</div><span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
 <div class="p"><div id="T6a" class="txs"><span class="v">&#x200f;6</span><span class="vsp">&nbsp;</span>އެމީހާ ބޫޢަޒުއަށް ބުންޏެވެ.</div> <div id="T6b" class="txs">”އެއީ ނުޢުމީއާއި އެކު މުއާބުން އައި ކުއްޖެއް.</div><span id="bookmarks6"></span> <a id="v7"></a><div id="T7a" class="txs"><span class="v">&#x200f;7</span><span class="vsp">&nbsp;</span>އޭނާ މިތަނަށް އައިސް އެދުނީ މަސައްކަތު މީހުންނަށް ނުނެގިފައި ހުންނަ ގޮވާން ނެގުމުގެ ހުއްދައަކަށް.</div> <div id="T7b" class="txs">އެއަށް ފަހު އޭނާ ދިޔައީ ދަނޑުގައި މަސައްކަތް ކުރަމުން.</div> <div id="T7c" class="txs">އިރުއެރީއްސުރެން ފެށިގެން ހިނދުކޮޅަކަށް ހިޔަލަކަށް ވެސް ވަދެ ނުލާ.</div> <div id="T7d" class="txs">ތަނެއްގައި ފޫވެސް ޖައްސާނުލާ.“</div><span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
@@ -176,7 +179,7 @@ var baseRef  = "08-RUT-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/08_RUT_02.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/08_RUT_02.mp3" />
   </audio>
 </div>
 </div>

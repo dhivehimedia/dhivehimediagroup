@@ -16,18 +16,11 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
 $(document).ready(function() {
-
-// Glossary entries
-var glossary = {
-    "G-6": "<div><span class=\"k\">ހެޔޮޚަބަރުފުޅު</span> މިބަސް އައިސްފައި ވަނީ ގްރީކު ބަހުން ”އެވަންޖެލް“ އެވެ. މިއީ އަރަބި ބަހުން ”އިންޖީލް“ އެވެ. މިބަސްފުޅުން އިޝާރާތް ކޮށްދެނީ ދެކަމެކެވެ. އެއީ އީސާގެފާނު ކުރެއްވި ކަންތަކާއި ވިދާޅުވި ބަސްފުޅުތަކެވެ. މިތަރުޖަމާގައި އަޅުގަނޑުމެން މިބަސްފުޅަށް ބޭނުން ކުރަނީ ”އިންޖީލު“ މިބަހެވެ.</div><div class=\"p\">ދެވަނަ ކަމަށް ”އެވަންޖެލް“ މިބަސްފުޅުން އިޝާރާތް ކޮށްދެނީ އީސާގެފާނު މެދުވެރިވެވަޑައިގެން އަޅުގަނޑުމެން ނަރަކައިގެ އަޒާބުން ސަލާމަތްކޮށްދެއްވައި، ނިމުންނުވާ ޙަޔާތެއް ހޯއްދަވާ ދެއްވާ ޚަބަރުފުޅަށެވެ. އަދި އެކަލޭގެފާނު އަޅުގަނޑުމެންގެ ފާފަތަކަށްޓަކައި އަވަހާރަވުމަށް ފަހު އަލުން ދިރިވަޑައިގަތް ކަންތަކަށެވެ. މިކަންތަކަށް އަޅުގަނޑުމެން މިކިޔަނީ ”ހެޔޮޚަބަރުފުޅު“ މިހެންނެވެ. އަޅުގަނޑުމެންނަށް ނިމުންނުވާ ޙަޔާތެއް މިލިބެނީ އަޅުގަނޑުމެންގެ ފާފަތަކުން ތައުބާވެ އީސާގެފާނަށް އީމާންވުމުންނެވެ. ތައުބާވުމޭ މިބުނެވެނީ މާތްކަލާނގެއާ އަދި މީސްތަކުންނާ މެދު ކުރެވުނު ނުބައިކަންތަކާ މެދު ހިތާމަކޮށް އެކަންތައް އަލުން ނުކުރުމަށް އިޚުލާސްތެރިކަމާއެކު ގަސްތުކޮށް އެކަންތަކުން އެއްކިބާވެ އީސާގެފާނަށް ކިޔަމަންތެރިކަމާއެކު ދިރިއުޅެމުން ގެންދިއުމެވެ. މާތްކަލާނގެ މާތްރޫހުފުޅުގެ މަދަދާއެކު ގައެވެ. ”ނިމުންނުވާ ޙަޔާތް“ ބައްލަވާ.</div>"
-};
-
-initFootnotes(glossary);
-
 });
 
 // Chapters
@@ -46,12 +39,13 @@ var baseRef  = "41-MRK-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='32-JON-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-004.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='32-JON-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='32-JON-004.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;މަރުކުސް&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;i&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='41-MRK-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='42-LUK-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='41-MRK-001.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='42-LUK-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -68,12 +62,12 @@ var baseRef  = "41-MRK-";
 <div class="ip">އިންޖީލުގެ މަރުކުސް ފޮތްކޮޅު ބަޔާންކޮށްދެނީ އީސާ އަލްމަސީޙުގެ ސުންނަތާއި މެދުގައި ބަޔާންކޮށްދީފައިވާ ތަފުސީލީ ވާހަކަތަކެވެ. ޔަޙުޔާގެފާނުގެ އަތްޕުޅުމަތީގައި އެކަލޭގެފާނު ތައުބާގެ ހިނަވައިގެންނެވި ހިނދުން ފެށިގެން އެކަލޭގެފާނުގެ އަވަހާރަވެ ވަޑައިގެންނެވުމަށް ފަހު އަލުން ދިރިވަޑައިގެންނެވުމާ ހަމަޔަށް ހިނގި ކަންތަކުގެ ވާހަކަތަކެވެ.</div>
 <div class="ip">މިފޮތުގެ މައިގަނޑު މަގުސަދަކީ އަލްމަސީޙާއި މެދު މަޢުލޫމާތު އަންގައި ދިނުމެވެ. އަދި އީސާއަލްމަސީޙާއި މެދު އީމާންތެރިވީ ފަރާތްތަކާ މެދު ކުރެވޭ އަނިޔާތަކަށް އީސާގެފާނުގެ ޙަޔާތްޕުޅުގައި ކަންތައް ހިނގިގޮތް ބުނެދީ ހިތްވަރު ދިނުމެވެ.</div>
 <div class="ip">މި ފޮތުގައި ހިމެނިފައިވާ މައިގަނޑު ބައިތަކަކީ:</div>
-<div class="io">1. އިންޖީލުގެ ފެށުން. (<span class="reflink"><a href="08-MRK-001.html#v1">1‏:1‏-13</a></span>)</div>
-<div class="io">2. ގަލީލީގައި އީސާގެފާނުގެ އުނގަންނަވައި ދެއްވުން. (<span class="reflink"><a href="08-MRK-001.html#v14">1‏:14</a></span>‏—<span class="reflink"><a href="08-MRK-009.html#v50">9‏:50</a></span>)</div>
-<div class="io">3. ގަލީލީ ސަރަހައްދުން ޖެރޫސަލަމަށް. (<span class="reflink"><a href="08-MRK-010.html#v1">10‏:1‏-52</a></span>)</div>
-<div class="io">4. ފަހު ހަފުތާ ޖެރޫސަލަމާއި ކައިރީގައި ހޭދަ ކުރެއްވުން. (<span class="reflink"><a href="08-MRK-011.html#v1">11‏:1</a></span>‏—<span class="reflink"><a href="08-MRK-015.html#v47">15‏:47</a></span>)</div>
-<div class="io">5. އީސާގެފާނު އަލުން ދިރިވަޑައިގެންނެވުން. (<span class="reflink"><a href="08-MRK-016.html#v1">16‏:1‏-8</a></span>)</div>
-<div class="io">6. އީސާގެފާނު މީސްތަކުންގެ ކުރިމައްޗަށް ފާޅުވެ ވަޑައިގެންނެވުމާއި އުޑަށް އުފުއްލެވުން. (<span class="reflink"><a href="08-MRK-016.html#v9">16‏:9‏-20</a></span>)</div>
+<div class="io">1. އިންޖީލުގެ ފެށުން. (<span class="reflink"><a href="41-MRK-001.html#v1">1‏:1‏-13</a></span>)</div>
+<div class="io">2. ގަލީލީގައި އީސާގެފާނުގެ އުނގަންނަވައި ދެއްވުން. (<span class="reflink"><a href="41-MRK-001.html#v14">1‏:14</a></span>‏—<span class="reflink"><a href="41-MRK-009.html#v50">9‏:50</a></span>)</div>
+<div class="io">3. ގަލީލީ ސަރަހައްދުން ޖެރޫސަލަމަށް. (<span class="reflink"><a href="41-MRK-010.html#v1">10‏:1‏-52</a></span>)</div>
+<div class="io">4. ފަހު ހަފުތާ ޖެރޫސަލަމާއި ކައިރީގައި ހޭދަ ކުރެއްވުން. (<span class="reflink"><a href="41-MRK-011.html#v1">11‏:1</a></span>‏—<span class="reflink"><a href="41-MRK-015.html#v47">15‏:47</a></span>)</div>
+<div class="io">5. އީސާގެފާނު އަލުން ދިރިވަޑައިގެންނެވުން. (<span class="reflink"><a href="41-MRK-016.html#v1">16‏:1‏-8</a></span>)</div>
+<div class="io">6. އީސާގެފާނު މީސްތަކުންގެ ކުރިމައްޗަށް ފާޅުވެ ވަޑައިގެންނެވުމާއި އުޑަށް އުފުއްލެވުން. (<span class="reflink"><a href="41-MRK-016.html#v9">16‏:9‏-20</a></span>)</div>
 </div>
 </body>
 </html>

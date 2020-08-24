@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -30,20 +31,20 @@ var timings = [
     { label: "1b", start: 8, end: 10.74 },
     { label: "2a", start: 10.99, end: 15.17 },
     { label: "2b", start: 15.42, end: 18.97 },
-    { label: "3a", start: 19.22, end: 24.47 },
-    { label: "3b", start: 24.72, end: 27.99 },
+    { label: "3a", start: 19.22, end: 23.82 },
+    { label: "3b", start: 24.07, end: 27.99 },
     { label: "4", start: 28.24, end: 36.06 },
     { label: "5a", start: 36.31, end: 40.69 },
     { label: "5b", start: 40.94, end: 45.07 },
-    { label: "6a", start: 45.32, end: 47.7 },
-    { label: "6b", start: 47.95, end: 51.59 },
-    { label: "7", start: 51.84, end: 58.28 },
-    { label: "8a", start: 58.53, end: 62.71 },
-    { label: "8b", start: 62.96, end: 66.31 },
-    { label: "9a", start: 66.56, end: 68.3 },
+    { label: "6a", start: 45.32, end: 48.15 },
+    { label: "6b", start: 48.4, end: 50.94 },
+    { label: "7", start: 51.19, end: 59.07 },
+    { label: "8a", start: 59.32, end: 61.98 },
+    { label: "8b", start: 62.23, end: 66.35 },
+    { label: "9a", start: 66.6, end: 68.3 },
     { label: "9b", start: 68.55, end: 71.57 },
-    { label: "10a", start: 71.82, end: 74.71 },
-    { label: "10b", start: 74.96, end: 76.35 },
+    { label: "10a", start: 71.82, end: 74.12 },
+    { label: "10b", start: 74.37, end: 76.35 },
     { label: "10c", start: 76.6, end: 80.05 },
     { label: "11", start: 80.3, end: 85.58 },
     { label: "12a", start: 85.83, end: 89.56 },
@@ -55,12 +56,12 @@ var timings = [
     { label: "14b", start: 107, end: 110.29 },
     { label: "15a", start: 110.54, end: 113.7 },
     { label: "15b", start: 113.95, end: 117.9 },
-    { label: "16", start: 118.15, end: 126.23 },
-    { label: "s2", start: 126.48, end: 128.59 },
-    { label: "17a", start: 128.84, end: 130.74 },
+    { label: "16", start: 118.15, end: 125.4 },
+    { label: "s2", start: 125.65, end: 128.55 },
+    { label: "17a", start: 128.8, end: 130.74 },
     { label: "17b", start: 130.99, end: 134.83 },
-    { label: "18a", start: 135.08, end: 137.69 },
-    { label: "18b", start: 137.94, end: 141.21 },
+    { label: "18a", start: 135.08, end: 138.31 },
+    { label: "18b", start: 138.56, end: 141.21 },
     { label: "19a", start: 141.46, end: 143.97 },
     { label: "19b", start: 144.22, end: 145.03 },
     { label: "19c", start: 145.28, end: 145.69 },
@@ -70,19 +71,19 @@ var timings = [
     { label: "21", start: 157.79, end: 165.11 },
     { label: "s3", start: 165.36, end: 175.36 },
     { label: "22a", start: 165.36, end: 169.18 },
-    { label: "22b", start: 169.43, end: 173.91 },
-    { label: "23a", start: 174.16, end: 177.95 },
-    { label: "23b", start: 178.2, end: 181.39 },
-    { label: "s4", start: 181.64, end: 191.64 },
-    { label: "24", start: 181.64, end: 185.83 },
+    { label: "22b", start: 169.43, end: 173.36 },
+    { label: "23a", start: 173.61, end: 177.4 },
+    { label: "23b", start: 177.65, end: 181.49 },
+    { label: "s4", start: 181.74, end: 181.74 },
+    { label: "24", start: 181.77, end: 185.83 },
     { label: "25", start: 186.08, end: 191.63 },
     { label: "s5", start: 191.88, end: 201.88 },
     { label: "26", start: 191.88, end: 195.03 },
-    { label: "27", start: 195.28, end: 201.23 },
-    { label: "s6", start: 201.48, end: 211.48 },
-    { label: "28", start: 201.48, end: 206.83 },
-    { label: "s7", start: 207.08, end: 217.08 },
-    { label: "29a", start: 207.08, end: 210.49 },
+    { label: "27", start: 195.28, end: 200.89 },
+    { label: "s6", start: 201.14, end: 201.14 },
+    { label: "28", start: 201.18, end: 207.39 },
+    { label: "s7", start: 207.64, end: 217.64 },
+    { label: "29a", start: 207.64, end: 210.49 },
     { label: "29b", start: 210.74, end: 214.55 },
     { label: "29c", start: 214.8, end: 216.79 }
 ];
@@ -109,12 +110,13 @@ var baseRef  = "20-PRO-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-021.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='20-PRO-021.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ހަރުބަސްތައް&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;22&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-023.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='20-PRO-023.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -157,7 +159,7 @@ var baseRef  = "20-PRO-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/20_PRO_22.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/20_PRO_22.mp3" />
   </audio>
 </div>
 </div>

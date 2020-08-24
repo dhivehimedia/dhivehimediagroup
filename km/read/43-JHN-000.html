@@ -16,26 +16,11 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
 $(document).ready(function() {
-
-// Footnotes and Cross-references
-var crossrefs = {
-    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">1‏:0 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"09-LUK-001.html#v35\">ލޫކާސް 1‏:35</a></span></span></div>"
-};
-
-initFootnotes(crossrefs);
-
-
-// Glossary entries
-var glossary = {
-    "G-41": "<div><span class=\"k\">މާތްރޫޙުފުޅު</span> މާތްރޫޙުފުޅަކީ މާތްރަސްކަލާނގެ ރޫޙުފުޅެވެ. މިރޫޙުފުޅަކީ މާތްރަސްކަލާނގެ ޚާއްސަ ކުރައްވާ ފޮނުއްވި އަލްމަސީޙު ކަމުގައިވާ އީސާގެފާނު ގަބޫލުކުރާ މީހުންނަށް މާތްރަސްކަލާނގެ ދެއްވާ ހަދިޔާއެކެވެ. އެކަލޭގެފާނުގެ ބަސްފުޅުތަކުގެ އަޑުއަހާ އެބަސްފުޅުތަކަށް ކިޔަމަންވާ މީހުންނަށް މާތްރޫޙުފުގެ އެހީތެރިކަން ލިބޭނެއެވެ. އަދި އީސާގެފާނު މެދުވެރިކޮށް ދެއްވި ދިންނަވާނޭ މަގުން އުޅުމަށް ވެސް މާތްރޫޙުފުޅު މީސްތަކުންނަށް އެހީތެރިވެދެއްވާނެއެވެ. މާތްރޫޙުފުޅުގެ ސަބަބުން އެރޫޙުފުޅު އެމީހަކާއި އެކުގައިވާ މީހަކަށް ފާފައިން ދުރުވެގެން އުޅުމަށް ބާރުލިބޭނެއެވެ.</div>"
-};
-
-initFootnotes(glossary);
-
 });
 
 // Chapters
@@ -54,12 +39,13 @@ var baseRef  = "43-JHN-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='42-LUK-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='42-LUK-024.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='42-LUK-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='42-LUK-024.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޔޫޙަންނާ&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;i&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='43-JHN-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='44-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='43-JHN-001.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='44-ACT-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 

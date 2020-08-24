@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -39,27 +40,27 @@ var timings = [
     { label: "2f", start: 49.08, end: 53.8 },
     { label: "s2", start: 54.05, end: 57.27 },
     { label: "3a", start: 57.52, end: 62.11 },
-    { label: "3b", start: 62.36, end: 63.95 },
-    { label: "3c", start: 64.2, end: 68.14 },
+    { label: "3b", start: 62.36, end: 63.16 },
+    { label: "3c", start: 63.41, end: 68.14 },
     { label: "3d", start: 68.39, end: 77.18 },
-    { label: "4a", start: 77.43, end: 78.67 },
-    { label: "4b", start: 78.92, end: 79.55 },
-    { label: "4c", start: 79.8, end: 84.39 },
+    { label: "4a", start: 77.43, end: 78.59 },
+    { label: "4b", start: 78.84, end: 79.47 },
+    { label: "4c", start: 79.72, end: 84.39 },
     { label: "4d", start: 84.64, end: 92.09 },
     { label: "5a", start: 92.34, end: 102.67 },
     { label: "5b", start: 102.92, end: 106.83 },
-    { label: "6a", start: 107.08, end: 108.31 },
-    { label: "6b", start: 108.56, end: 111.7 },
-    { label: "6c", start: 111.95, end: 118.33 },
+    { label: "6a", start: 107.08, end: 108.35 },
+    { label: "6b", start: 108.6, end: 112.35 },
+    { label: "6c", start: 112.6, end: 118.33 },
     { label: "7a", start: 118.58, end: 124.49 },
     { label: "7b", start: 124.74, end: 129.78 },
-    { label: "7c", start: 130.03, end: 136.75 },
-    { label: "7d", start: 137, end: 146.44 },
+    { label: "7c", start: 130.03, end: 135.8 },
+    { label: "7d", start: 136.05, end: 146.44 },
     { label: "8a", start: 146.69, end: 152.25 },
     { label: "8b", start: 152.5, end: 153.71 },
     { label: "8c", start: 153.96, end: 158.72 },
-    { label: "8d", start: 158.97, end: 160.03 },
-    { label: "8e", start: 160.28, end: 164.54 },
+    { label: "8d", start: 158.97, end: 159.99 },
+    { label: "8e", start: 160.24, end: 164.54 },
     { label: "9", start: 164.79, end: 171.28 },
     { label: "10", start: 171.53, end: 183.1 },
     { label: "11a", start: 183.35, end: 187.32 },
@@ -74,8 +75,8 @@ var timings = [
     { label: "12f", start: 229.85, end: 234.29 },
     { label: "s3", start: 234.54, end: 237.03 },
     { label: "13a", start: 237.28, end: 238.27 },
-    { label: "13b", start: 238.52, end: 240.03 },
-    { label: "13c", start: 240.28, end: 242.92 },
+    { label: "13b", start: 238.52, end: 240.07 },
+    { label: "13c", start: 240.32, end: 242.92 },
     { label: "13d", start: 243.17, end: 248.28 },
     { label: "14a", start: 248.53, end: 250.87 },
     { label: "14b", start: 251.12, end: 254.49 },
@@ -89,8 +90,8 @@ var timings = [
     { label: "16c", start: 280.81, end: 284.21 },
     { label: "17a", start: 284.46, end: 286.06 },
     { label: "17b", start: 286.31, end: 293.11 },
-    { label: "17c", start: 293.36, end: 297.11 },
-    { label: "17d", start: 297.36, end: 304.62 },
+    { label: "17c", start: 293.36, end: 297.63 },
+    { label: "17d", start: 297.88, end: 304.62 },
     { label: "18a", start: 304.87, end: 318.47 },
     { label: "18b", start: 318.72, end: 321.05 },
     { label: "19a", start: 321.3, end: 324.83 },
@@ -103,8 +104,8 @@ var timings = [
     { label: "22a", start: 362.63, end: 363.35 },
     { label: "22b", start: 363.6, end: 370.03 },
     { label: "22c", start: 370.28, end: 370.78 },
-    { label: "22d", start: 371.03, end: 377.32 },
-    { label: "23a", start: 377.57, end: 380.92 },
+    { label: "22d", start: 371.03, end: 377.42 },
+    { label: "23a", start: 377.67, end: 380.92 },
     { label: "23b", start: 381.17, end: 386.66 },
     { label: "23c", start: 386.91, end: 392.37 },
     { label: "23d", start: 392.62, end: 396.02 },
@@ -113,8 +114,8 @@ var timings = [
     { label: "24b", start: 407.02, end: 409.5 },
     { label: "24c", start: 409.75, end: 415.72 },
     { label: "24d", start: 415.97, end: 417.87 },
-    { label: "24e", start: 418.12, end: 419.97 },
-    { label: "25a", start: 420.22, end: 424.3 },
+    { label: "24e", start: 418.12, end: 420.55 },
+    { label: "25a", start: 420.8, end: 424.3 },
     { label: "25b", start: 424.55, end: 429.23 }
 ];
 
@@ -131,7 +132,7 @@ var footnotes = {
 initFootnotes(footnotes);
 
 var crossrefs = {
-    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">1‏:3 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"10-JHN-003.html#v1\">ޔޫޙަންނާ 3‏:1‏-21</a></span></span></div>",
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">1‏:3 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"43-JHN-003.html#v1\">ޔޫޙަންނާ 3‏:1‏-21</a></span></span></div>",
     "X-1": "<div class=\"footnote-p\"><span class=\"xo\">1‏:16 </span><span class=\"xt\">ލާވީން 11‏:44</span></div>",
     "X-2": "<div class=\"footnote-p\"><span class=\"xo\">1‏:25 </span><span class=\"xt\">އިޝަޢުޔާ 40‏:6‏-8</span></div>"
 };
@@ -156,12 +157,13 @@ var baseRef  = "60-1PE-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='59-JAS-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='60-1PE-000.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='59-JAS-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='60-1PE-000.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޕަތަރަސްގެ ފުރަތަމަ ސިޓީ&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='60-1PE-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='61-2PE-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='60-1PE-002.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='61-2PE-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -198,7 +200,7 @@ var baseRef  = "60-1PE-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/60_1PE_01.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/60_1PE_01.mp3" />
   </audio>
 </div>
 </div>

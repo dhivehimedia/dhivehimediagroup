@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -31,10 +32,10 @@ var timings = [
     { label: "2a", start: 16.06, end: 20.71 },
     { label: "2b", start: 20.96, end: 24.83 },
     { label: "3", start: 25.08, end: 31.93 },
-    { label: "4", start: 32.18, end: 38.1 },
-    { label: "5a", start: 38.35, end: 43.75 },
-    { label: "5b", start: 44, end: 46.91 },
-    { label: "6a", start: 47.16, end: 51.43 },
+    { label: "4", start: 32.18, end: 38.79 },
+    { label: "5a", start: 39.04, end: 43.75 },
+    { label: "5b", start: 44, end: 47.83 },
+    { label: "6a", start: 48.08, end: 51.43 },
     { label: "6b", start: 51.68, end: 54.51 },
     { label: "7a", start: 54.76, end: 58.67 },
     { label: "7b", start: 58.92, end: 61.19 },
@@ -42,26 +43,26 @@ var timings = [
     { label: "8b", start: 65.02, end: 69.15 },
     { label: "9", start: 69.4, end: 76.43 },
     { label: "10a", start: 76.68, end: 78.9 },
-    { label: "10b", start: 79.15, end: 82.95 },
-    { label: "11a", start: 83.2, end: 89.19 },
-    { label: "11b", start: 89.44, end: 92.35 },
-    { label: "12a", start: 92.6, end: 98.71 },
-    { label: "12b", start: 98.96, end: 100.89 },
+    { label: "10b", start: 79.15, end: 82.99 },
+    { label: "11a", start: 83.24, end: 89.23 },
+    { label: "11b", start: 89.48, end: 92.35 },
+    { label: "12a", start: 92.6, end: 97.99 },
+    { label: "12b", start: 98.24, end: 100.89 },
     { label: "13", start: 101.14, end: 107.38 },
     { label: "14", start: 107.63, end: 112.22 },
     { label: "15a", start: 112.47, end: 115.31 },
     { label: "15b", start: 115.56, end: 117.23 },
-    { label: "16", start: 117.48, end: 122.26 },
-    { label: "17a", start: 122.51, end: 125.25 },
-    { label: "17b", start: 125.5, end: 129.17 },
+    { label: "16", start: 117.48, end: 122.95 },
+    { label: "17a", start: 123.2, end: 125.83 },
+    { label: "17b", start: 126.08, end: 129.17 },
     { label: "18", start: 129.42, end: 133.55 },
-    { label: "19", start: 133.8, end: 142.63 },
-    { label: "20a", start: 142.88, end: 145.21 },
+    { label: "19", start: 133.8, end: 141.74 },
+    { label: "20a", start: 141.99, end: 145.21 },
     { label: "20b", start: 145.46, end: 148.29 },
     { label: "21", start: 148.54, end: 154.74 },
     { label: "22a", start: 154.99, end: 157.77 },
-    { label: "22b", start: 158.02, end: 161.87 },
-    { label: "23a", start: 162.12, end: 164.67 },
+    { label: "22b", start: 158.02, end: 162.31 },
+    { label: "23a", start: 162.56, end: 164.67 },
     { label: "23b", start: 164.92, end: 168.39 },
     { label: "24", start: 168.64, end: 172.57 },
     { label: "25a", start: 172.82, end: 177.59 },
@@ -101,12 +102,13 @@ var baseRef  = "20-PRO-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-020.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='10-2SA-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='20-PRO-020.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ހަރުބަސްތައް&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;21&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='20-PRO-022.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='20-PRO-022.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='32-JON-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -151,7 +153,7 @@ var baseRef  = "20-PRO-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/20_PRO_21.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/20_PRO_21.mp3" />
   </audio>
 </div>
 </div>

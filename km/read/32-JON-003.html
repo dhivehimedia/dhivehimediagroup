@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -33,12 +34,12 @@ var timings = [
     { label: "3a", start: 21.48, end: 23.69 },
     { label: "3b", start: 23.94, end: 27.14 },
     { label: "4a", start: 27.39, end: 32.11 },
-    { label: "4b", start: 32.36, end: 36.71 },
-    { label: "5a", start: 36.96, end: 41.31 },
+    { label: "4b", start: 32.36, end: 35.88 },
+    { label: "5a", start: 36.13, end: 41.31 },
     { label: "5b", start: 41.56, end: 48 },
     { label: "s2", start: 48.25, end: 50.6 },
-    { label: "6", start: 50.85, end: 62.78 },
-    { label: "7a", start: 63.03, end: 68.12 },
+    { label: "6", start: 50.85, end: 63.67 },
+    { label: "7a", start: 63.92, end: 68.12 },
     { label: "7b", start: 68.37, end: 74.18 },
     { label: "8a", start: 74.43, end: 76.47 },
     { label: "8b", start: 76.72, end: 79.46 },
@@ -69,12 +70,13 @@ var baseRef  = "32-JON-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='20-PRO-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-002.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='20-PRO-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='32-JON-002.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޔޫނުސް&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;3&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-004.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='41-MRK-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='32-JON-004.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='41-MRK-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -96,7 +98,7 @@ var baseRef  = "32-JON-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/32_JON_03.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/32_JON_03.mp3" />
   </audio>
 </div>
 </div>

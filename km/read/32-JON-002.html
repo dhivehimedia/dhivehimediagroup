@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -27,18 +28,18 @@ var pop = Popcorn("#audio");
 var timings = [
     { label: "s1", start: 1.33, end: 5.79 },
     { label: "1", start: 6.04, end: 11 },
-    { label: "2a", start: 11.25, end: 19.28 },
-    { label: "2b", start: 19.53, end: 24.43 },
-    { label: "3a", start: 24.68, end: 27.67 },
+    { label: "2a", start: 11.25, end: 20.03 },
+    { label: "2b", start: 20.28, end: 23.54 },
+    { label: "3a", start: 23.79, end: 27.67 },
     { label: "3b", start: 27.92, end: 29.88 },
     { label: "3c", start: 30.13, end: 33.01 },
     { label: "4a", start: 33.26, end: 35.08 },
-    { label: "4b", start: 35.33, end: 38.39 },
-    { label: "4c", start: 38.64, end: 39.21 },
-    { label: "4d", start: 39.46, end: 42.39 },
-    { label: "4e", start: 42.64, end: 45.47 },
-    { label: "5a", start: 45.72, end: 47.79 },
-    { label: "5b", start: 48.04, end: 51.08 },
+    { label: "4b", start: 35.33, end: 37.87 },
+    { label: "4c", start: 38.12, end: 39.21 },
+    { label: "4d", start: 39.46, end: 41.95 },
+    { label: "4e", start: 42.2, end: 45.47 },
+    { label: "5a", start: 45.72, end: 47.75 },
+    { label: "5b", start: 48, end: 51.08 },
     { label: "5c", start: 51.33, end: 54.52 },
     { label: "6a", start: 54.77, end: 58.75 },
     { label: "6b", start: 59, end: 61.87 },
@@ -77,12 +78,13 @@ var baseRef  = "32-JON-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='20-PRO-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='20-PRO-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='32-JON-001.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޔޫނުސް&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='32-JON-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='41-MRK-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='32-JON-003.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='41-MRK-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -122,7 +124,7 @@ var baseRef  = "32-JON-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/32_JON_02.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/32_JON_02.mp3" />
   </audio>
 </div>
 </div>

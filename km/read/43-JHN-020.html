@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript">
 
@@ -25,25 +26,25 @@ $(window).load(function() {
 var pop = Popcorn("#audio");
 
 var timings = [
-    { label: "s1", start: 1.06, end: 4.39 },
-    { label: "1a", start: 4.64, end: 10.11 },
+    { label: "s1", start: 1.6, end: 4.35 },
+    { label: "1a", start: 4.6, end: 10.11 },
     { label: "1b", start: 10.36, end: 14.97 },
     { label: "2a", start: 15.22, end: 21.09 },
     { label: "2b", start: 21.34, end: 24.31 },
     { label: "2c", start: 24.56, end: 28.75 },
     { label: "3", start: 29, end: 33.23 },
     { label: "4a", start: 33.48, end: 35.23 },
-    { label: "4b", start: 35.48, end: 39.52 },
-    { label: "5a", start: 39.77, end: 45.64 },
+    { label: "4b", start: 35.48, end: 40.11 },
+    { label: "5a", start: 40.36, end: 45.64 },
     { label: "5b", start: 45.89, end: 48.9 },
-    { label: "6", start: 49.15, end: 55.8 },
-    { label: "7", start: 56.05, end: 64.74 },
-    { label: "8a", start: 64.99, end: 69.35 },
-    { label: "8b", start: 69.6, end: 72.15 },
-    { label: "9", start: 72.4, end: 80.86 },
+    { label: "6", start: 49.15, end: 56.55 },
+    { label: "7", start: 56.8, end: 64.74 },
+    { label: "8a", start: 64.99, end: 68.8 },
+    { label: "8b", start: 69.05, end: 72.19 },
+    { label: "9", start: 72.44, end: 80.86 },
     { label: "10", start: 81.11, end: 83.58 },
-    { label: "s2", start: 83.83, end: 87.91 },
-    { label: "11a", start: 88.16, end: 91.87 },
+    { label: "s2", start: 83.83, end: 87.87 },
+    { label: "11a", start: 88.12, end: 91.87 },
     { label: "11b", start: 92.12, end: 94.35 },
     { label: "12", start: 94.6, end: 105.43 },
     { label: "13a", start: 105.68, end: 107.5 },
@@ -51,16 +52,18 @@ var timings = [
     { label: "13c", start: 109.9, end: 111.22 },
     { label: "13d", start: 111.47, end: 114.66 },
     { label: "13e", start: 114.91, end: 118.57 },
-    { label: "14a", start: 118.82, end: 123.55 },
-    { label: "14b", start: 123.8, end: 125.35 },
-    { label: "14c", start: 125.6, end: 127.97 },
+    { label: "14a", start: 118.82, end: 123.03 },
+    { label: "14b", start: 123.28, end: 124.7 },
+    { label: "14c", start: 124.95, end: 127.97 },
     { label: "15a", start: 128.22, end: 130.53 },
     { label: "15b", start: 130.78, end: 132.53 },
     { label: "15c", start: 132.78, end: 134.42 },
     { label: "15d", start: 134.67, end: 138.6 },
     { label: "15e", start: 138.85, end: 140.85 },
-    { label: "15f", start: 141.1, end: 145.69 },
-    { label: "15g", start: 145.94, end: 150.07 },
+    { label: "15f", start: 141.1, end: 142.11 },
+    { label: "15g", start: 142.36, end: 142.59 },
+    { label: "15h", start: 142.84, end: 145.69 },
+    { label: "15i", start: 145.94, end: 150.07 },
     { label: "16a", start: 150.32, end: 151.34 },
     { label: "16b", start: 151.59, end: 153.11 },
     { label: "16c", start: 153.36, end: 156.85 },
@@ -70,7 +73,9 @@ var timings = [
     { label: "17b", start: 162.76, end: 164.23 },
     { label: "17c", start: 164.48, end: 166.91 },
     { label: "17d", start: 167.16, end: 169.25 },
-    { label: "17e", start: 169.5, end: 176.86 },
+    { label: "17e", start: 169.5, end: 170.86 },
+    { label: "17f", start: 171.11, end: 173.96 },
+    { label: "17g", start: 174.21, end: 176.86 },
     { label: "18a", start: 177.11, end: 180.95 },
     { label: "18b", start: 181.2, end: 182.95 },
     { label: "18c", start: 183.2, end: 186.44 },
@@ -83,8 +88,8 @@ var timings = [
     { label: "20b", start: 212.1, end: 215.21 },
     { label: "21a", start: 215.46, end: 218.74 },
     { label: "21b", start: 218.99, end: 220.5 },
-    { label: "21c", start: 220.75, end: 224.48 },
-    { label: "22a", start: 224.73, end: 229.46 },
+    { label: "21c", start: 220.75, end: 224.39 },
+    { label: "22a", start: 224.64, end: 229.46 },
     { label: "22b", start: 229.71, end: 232.15 },
     { label: "23a", start: 232.4, end: 237.11 },
     { label: "23b", start: 237.36, end: 243.51 },
@@ -96,8 +101,8 @@ var timings = [
     { label: "25d", start: 259.55, end: 270.15 },
     { label: "26a", start: 270.4, end: 274.71 },
     { label: "26b", start: 274.96, end: 277.32 },
-    { label: "26c", start: 277.57, end: 279.83 },
-    { label: "26d", start: 280.08, end: 284.09 },
+    { label: "26c", start: 277.57, end: 279.28 },
+    { label: "26d", start: 279.53, end: 284.09 },
     { label: "26e", start: 284.34, end: 285.6 },
     { label: "27a", start: 285.85, end: 288.19 },
     { label: "27b", start: 288.44, end: 290.51 },
@@ -109,11 +114,11 @@ var timings = [
     { label: "28c", start: 301.39, end: 302.58 },
     { label: "29a", start: 302.83, end: 304.77 },
     { label: "29b", start: 305.02, end: 308.55 },
-    { label: "29c", start: 308.8, end: 314.71 },
-    { label: "30a", start: 314.96, end: 319.47 },
+    { label: "29c", start: 308.8, end: 314.13 },
+    { label: "30a", start: 314.38, end: 319.47 },
     { label: "30b", start: 319.72, end: 322.38 },
-    { label: "31a", start: 322.63, end: 334.23 },
-    { label: "31b", start: 334.48, end: 339.69 },
+    { label: "31a", start: 322.63, end: 334.15 },
+    { label: "31b", start: 334.4, end: 339.69 },
     { label: "31c", start: 339.94, end: 346.75 }
 ];
 
@@ -148,12 +153,13 @@ var baseRef  = "43-JHN-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='42-LUK-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='43-JHN-019.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='../../' title='Home'>&nbsp;&nbsp;<i class="fa fa-home"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='42-LUK-000.html' title='Previous Book'>&nbsp;&nbsp;<b><i class="fa fa-fast-forward"></i></b>&nbsp;&nbsp;</a></a></span>
+  <span class="button"><a href='43-JHN-019.html' title='Previous Chapter'>&nbsp;&nbsp;<i class="fa fa-step-forward"></i>&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;ޔޫޙަންނާ&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;20&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='43-JHN-021.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='44-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+  <span class="button"><a href='43-JHN-021.html' title='Next Chapter'>&nbsp;&nbsp;<i class="fa fa-step-backward"></i>&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='44-ACT-000.html' title='Next Book'>&nbsp;<i class="fa fa-fast-backward"></i>&nbsp;</a></span>
 </div>
 </div>
 
@@ -169,10 +175,10 @@ var baseRef  = "43-JHN-";
 <div class="p"><div id="T11a" class="txs"><span class="v">&#x200f;11</span><span class="vsp">&nbsp;</span>އޭރު މަރިޔަމް މަގްދަލޭނާ އެ ހޮހަޅައިގެ ކުރިމަތީގައި ރޯން ހުއްޓެވެ.</div> <div id="T11b" class="txs">އޭނާ ރޮމުން ގުދުވެ އެތަނުގެ އެތެރެ ބަލާލިއެވެ.</div><span id="bookmarks11"></span> <a id="v12"></a><div id="T12" class="txs"><span class="v">&#x200f;12</span><span class="vsp">&nbsp;</span>އެވަގުތު އޭނާއަށް ފެނުނީ އީސާގެފާނުގެ ހަށިކޮޅު ވެޑުވިފައި ވީ ތަނުގެ ބޯލާކޮޅާއި ފައިލާކޮޅުގައި ހުދު ހެދުމެއްގައި ތިއްބެވި ދެ މަލާއިކަތުން ތިއްބަވަނިކޮށެވެ.</div><span id="bookmarks12"></span> <a id="v13"></a><div id="T13a" class="txs"><span class="v">&#x200f;13</span><span class="vsp">&nbsp;</span>އެމަލާއިކަތުން އޭނާ ކުރެން އެއްސެވެ.</div> <div id="T13b" class="txs">”ކަމަނާ ތިޔަ ރޮނީ ކީއްވެ؟“</div></div>
 <div class="p"><div id="T13c" class="txs">އޭނާ ބުންޏެވެ.</div> <div id="T13d" class="txs">”އެމީހުން އަހަރެންގެ ސާހިބާގެ ހަށިކޮޅު ގެންގޮއްސި.</div> <div id="T13e" class="txs">އަދި އެމީހުން އެކަލޭގެފާނު ގެންދިޔަ ތަނެއް ވެސް މަށަކަށް ނޭނގެ.“</div><span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
 <div class="p"><div id="T14a" class="txs"><span class="v">&#x200f;14</span><span class="vsp">&nbsp;</span>ދެން އޭނާ ފަހަތަށް އެނބުރި ބަލާލިއިރު އޭނާގެ ފުރަގަހުގައި މީހަކު ހުއްޓެވެ.</div> <div id="T14b" class="txs">އެއީ އީސާގެފާނެވެ.</div> <div id="T14c" class="txs">ނަމަވެސް އޭނާއަކަށް އެއީ އެކަލޭގެފާނު ކަމެއް ނޭނގުނެވެ.</div><span id="bookmarks14"></span> <a id="v15"></a><div id="T15a" class="txs"><span class="v">&#x200f;15</span><span class="vsp">&nbsp;</span>އީސާގެފާނު އޭނާ ކުރެން އެއްސެވިއެވެ.</div> <div id="T15b" class="txs">”ކަމަނާ ތިޔަ ރޮނީ ކީއްވެ؟</div> <div id="T15c" class="txs">ކަލޭ ތި ހޯދަނީ ކާކު؟“</div></div>
-<div class="p"><div id="T15d" class="txs">އޭނާ ހީކުރީ އެއީ އެބަގީޗާ ބަލަހައްޓާ މީހާ ކަމަށެވެ.</div> <div id="T15e" class="txs">އެހެންވެ އޭނާ އެމީހާއަށް ބުންޏެވެ.</div> <div id="T15f" class="txs">”ބޭބޭ،</div> <div id="T15g" class="txs">ބޭބެ، އެކަލޭގެފާނުގެ ހަށިކޮޅު ތަނަކަށް ލީނަމަ ބުނެބަލަ. އަހަރެން ގޮސް އެކަލޭގެފާނުގެ ހަށިކޮޅު އެތަނަކުން ގެންނާނަން.“</div><span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="p"><div id="T15d" class="txs">އޭނާ ހީކުރީ އެއީ އެބަގީޗާ ބަލަހައްޓާ މީހާ ކަމަށެވެ.</div> <div id="T15e" class="txs">އެހެންވެ އޭނާ އެމީހާއަށް ބުންޏެވެ.</div> <div id="T15f" class="txs">”ބޭބޭ،</div> <div id="T15g" class="txs">ބޭބެ،</div> <div id="T15h" class="txs">އެކަލޭގެފާނުގެ ހަށިކޮޅު ތަނަކަށް ލީނަމަ ބުނެބަލަ.</div> <div id="T15i" class="txs">އަހަރެން ގޮސް އެކަލޭގެފާނުގެ ހަށިކޮޅު އެތަނަކުން ގެންނާނަން.“</div><span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
 <div class="p"><div id="T16a" class="txs"><span class="v">&#x200f;16</span><span class="vsp">&nbsp;</span>އީސާގެފާނު ވިދާޅުވިއެވެ.</div> <div id="T16b" class="txs">”މަރިޔަމް!“</div></div>
 <div class="p"><div id="T16c" class="txs">އޭނާ އެކަލޭގެފާނާއި ދިމާއަށް އެނބުރި ޢިބްރާނީ ބަހުން ގޮވާލިއެވެ.</div> <div id="T16d" class="txs">”ރައްބޫނި!“</div> <div id="T16e" class="txs">މިބަހުގެ މާނައަކީ އެދުރުކަލޭގެފާނު އެވެ.</div><span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
-<div class="p"><div id="T17a" class="txs"><span class="v">&#x200f;17</span><span class="vsp">&nbsp;</span>”އަހަރެން ހިފަހައްޓަން ނޫޅޭ!“</div> <div id="T17b" class="txs">އީސާގެފާނު ވިދާޅުވިއެވެ.</div> <div id="T17c" class="txs">”އަދިއެއް އަހަރެން ބައްޕާފުޅުގެ އަރިހަކަށް ނުދަން.</div> <div id="T17d" class="txs">ކަލޭ ގޮސް އަހަރެންގެ އަޚުން ހޯދާ!</div> <div id="T17e" class="txs">ގޮސް އެމީހުން ގާތު ބުނޭ، އަހަރެން މިދަނީ އަހަރެންނާއި ކަލޭމެންގެ ބައްޕާފުޅު، އަދި އަހަންނާއި ކަލޭމެންގެ ވެސް ކަލާނގެ އަރިހަށޭ.“</div><span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="p"><div id="T17a" class="txs"><span class="v">&#x200f;17</span><span class="vsp">&nbsp;</span>”އަހަރެން ހިފަހައްޓަން ނޫޅޭ!“</div> <div id="T17b" class="txs">އީސާގެފާނު ވިދާޅުވިއެވެ.</div> <div id="T17c" class="txs">”އަދިއެއް އަހަރެން ބައްޕާފުޅުގެ އަރިހަކަށް ނުދަން.</div> <div id="T17d" class="txs">ކަލޭ ގޮސް އަހަރެންގެ އަޚުން ހޯދާ!</div> <div id="T17e" class="txs">ގޮސް އެމީހުން ގާތު ބުނޭ،</div> <div id="T17f" class="txs">އަހަރެން މިދަނީ އަހަރެންނާއި ކަލޭމެންގެ ބައްޕާފުޅު،</div> <div id="T17g" class="txs">އަދި އަހަންނާއި ކަލޭމެންގެ ވެސް ކަލާނގެ އަރިހަށޭ.“</div><span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
 <div class="p"><div id="T18a" class="txs"><span class="v">&#x200f;18</span><span class="vsp">&nbsp;</span>މަރިޔަމް މަގްދަލޭނާ ގޮސް އަސްޙާބީން ހޯދައި އެމީހުން ގާތު ބުންޏެވެ.</div> <div id="T18b" class="txs">”އަހަރެން މާތްސާހިބާ ދެކެފިން!“</div> <div id="T18c" class="txs">ދެން އެކަލޭގެފާނު ދެއްވި ޚަބަރުފުޅު އޭނާ އެމީހުންނަށް ދިނެވެ.</div><span id="bookmarks18"></span></div>
 
 <div class="s"><div id="Ts3" class="txs">އީސާގެފާނުގެ އަސްޙާބީންނަށް އެކަލޭގެފާނު ފެނުނު</div></div><span id="bookmarks18"></span><a id="v19"></a>
@@ -191,7 +197,7 @@ var baseRef  = "43-JHN-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://archive.org/download/KM-Audio/43_JHN_20.mp3" />
+    <source id="audio1" src="https://github.com/dhivehimedia/kmaudio/raw/master/KithaabulMuqaddhasDownloads/43_JHN_20.mp3" />
   </audio>
 </div>
 </div>
