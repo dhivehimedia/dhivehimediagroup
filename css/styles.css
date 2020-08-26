@@ -865,6 +865,8 @@ input[type='checkbox'] {
 	padding-top: 6.5rem;
 	padding-bottom: 4.25rem;
 	background-color: #4a8b66;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
+	background-size: cover;
 }
 
 .tabs h2 {
